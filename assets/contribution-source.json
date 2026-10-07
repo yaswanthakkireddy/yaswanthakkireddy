@@ -1,0 +1,55 @@
+{
+  "year": 2026,
+  "source": "https://github.com/yaswanthakkireddy?tab=overview&from=2026-01-01&to=2026-12-31",
+  "scope": "Public GitHub intensity levels; active days only. No fetch timestamp.",
+  "days": [
+    {
+      "date": "2026-04-15",
+      "level": 4
+    },
+    {
+      "date": "2026-04-16",
+      "level": 4
+    },
+    {
+      "date": "2026-04-17",
+      "level": 4
+    },
+    {
+      "date": "2026-04-19",
+      "level": 1
+    },
+    {
+      "date": "2026-04-23",
+      "level": 2
+    },
+    {
+      "date": "2026-04-24",
+      "level": 1
+    },
+    {
+      "date": "2026-05-03",
+      "level": 2
+    },
+    {
+      "date": "2026-05-05",
+      "level": 1
+    },
+    {
+      "date": "2026-05-23",
+      "level": 1
+    },
+    {
+      "date": "2026-07-05",
+      "level": 1
+    },
+    {
+      "date": "2026-07-30",
+      "level": 1
+    },
+    {
+      "date": "2026-10-07",
+      "level": 4
+    }
+  ]
+}
