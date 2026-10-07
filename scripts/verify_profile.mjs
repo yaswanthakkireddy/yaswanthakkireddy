@@ -202,7 +202,7 @@ try {
         ];
       for (const [section, heading] of sections) {
         try {
-          result.screenshots.push(await capture(page, configuration.name + '-' + section, headingLocator(readme, heading)));
+          result.screenshots.push(await capture(page, configuration.name + '-' + section, section === 'top' ? readme.locator('img[alt^="Yaswanth Akkireddy"]') : headingLocator(readme, heading)));
         } catch (error) {
           result.failures.push('Screenshot ' + section + ': ' + error.message);
         }
