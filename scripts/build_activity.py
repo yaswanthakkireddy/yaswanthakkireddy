@@ -160,6 +160,22 @@ def _text(x: int, y: int, value: str, *, size: int = 18,
             f'font-weight="{weight}" fill="{COLORS[color]}">{escape(value)}</text>')
 
 
+def animate_svg(svg: str) -> str:
+    width = 600 if 'width="600"' in svg[:180] else 1200
+    y = 134 if width == 600 else 138
+    motion = (f'<g aria-hidden="true"><rect x="32" y="{y}" width="60" height="2" '
+              f'fill="#00c8ff"><animate attributeName="x" values="32;{width - 92};32" '
+              'dur="10s" repeatCount="indefinite"/></rect></g>')
+    if width == 600:
+        motion += '<g aria-hidden="true">'
+        for i in range(len(PROJECTS)):
+            motion += (f'<circle cx="18" cy="{142 + i * 196 + 94}" r="3" fill="#00c8ff">'
+                       f'<animate attributeName="opacity" values=".2;.9;.2" dur="4s" begin="{i % 3}s" '
+                       'repeatCount="indefinite"/></circle>')
+        motion += '</g>'
+    return svg.replace("</svg>", motion + "</svg>")
+
+
 def render(rows: list[dict]) -> str:
     mapped = validate(rows)
     width, height = 1200, 264 + len(PROJECTS) * 72
@@ -204,20 +220,7 @@ def render(rows: list[dict]) -> str:
         _text(48, height - 46, "Daily snapshot · CI runs matched to main commits · sources linked below.", size=16),
         '</svg>\n',
     ))
-    svg = "".join(parts)
-    width = 600 if 'width="600"' in svg[:180] else 1200
-    y = 134 if width == 600 else 138
-    motion = (f'<g aria-hidden="true"><rect x="32" y="{y}" width="60" height="2" '
-              f'fill="#00c8ff"><animate attributeName="x" values="32;{width - 92};32" '
-              'dur="10s" repeatCount="indefinite"/></rect></g>')
-    if width == 600:
-        motion += '<g aria-hidden="true">'
-        for i in range(len(PROJECTS)):
-            motion += (f'<circle cx="18" cy="{142 + i * 196 + 94}" r="3" fill="#00c8ff">'
-                       f'<animate attributeName="opacity" values=".2;.9;.2" dur="4s" begin="{i % 3}s" '
-                       'repeatCount="indefinite"/></circle>')
-        motion += '</g>'
-    return svg.replace("</svg>", motion + "</svg>")
+    return animate_svg("".join(parts))
 
 
 def render_mobile(rows: list[dict]) -> str:
@@ -254,7 +257,7 @@ def render_mobile(rows: list[dict]) -> str:
         _text(32, height - 30, "UTC dates · linked evidence below", size=20, color="muted"),
         '</svg>\n',
     ))
-    return "".join(parts)
+    return animate_svg("".join(parts))
 
 
 def write_if_changed(output: Path, content: str) -> bool:

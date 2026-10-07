@@ -112,7 +112,7 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 ## Engineering Telemetry
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg?v=motion-20261007-c">
+  <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg?v=motion-20261007-d">
   <img src="assets/activity.svg?v=motion-20261007-b" alt="Engineering Telemetry: seven selected systems, scoped evaluation evidence, absolute main-commit dates in UTC and CI status checked against each main-branch commit." width="100%">
 </picture>
 
