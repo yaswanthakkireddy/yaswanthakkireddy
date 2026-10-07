@@ -124,31 +124,26 @@ try {
 
       const toscoLink = readme.locator('a[href="https://github.com/yaswanthakkireddy/TOSCO"]').first();
       if (!await toscoLink.count()) result.failures.push('Missing featured TOSCO project.');
-      if (configuration.isMobile && !result.images.some(image => image.source.includes('hero-mobile.svg'))) {
-        result.failures.push('Mobile hero asset was not selected.');
+      if (configuration.isMobile && !result.images.some(image => image.source.includes('neon-banner-mobile.svg'))) {
+        result.failures.push('Mobile neon banner was not selected.');
       }
       if (configuration.isMobile && !result.images.some(image => image.source.includes('tosco-mobile.svg'))) {
         result.failures.push('Mobile TOSCO asset was not selected.');
       }
-      const heroSource = result.images.find(image => image.alt.startsWith('Call me Yaswanth'))?.source;
-      if (!heroSource) result.failures.push('Portrait header was not rendered.');
+      const bannerImage = readme.locator('img[alt^="Yaswanth Akkireddy"]');
+      await bannerImage.scrollIntoViewIfNeeded();
+      const firstBanner = await bannerImage.screenshot({ type: 'png', animations: 'allow' });
+      await delay(1400);
+      const secondBanner = await bannerImage.screenshot({ type: 'png', animations: 'allow' });
+      result.motion = { differentFrames: !firstBanner.equals(secondBanner) };
+      if (!result.motion.differentFrames) result.failures.push('Neon banner has no visible motion.');
+      const aboutImage = result.images.find(image => image.alt.startsWith('About Yaswanth'));
+      if (!aboutImage) result.failures.push('About portrait is missing.');
       else {
-        const heroResponse = await page.request.get(heroSource);
-        const svg = await heroResponse.text();
-        result.portrait = { embeddedAvatar: /<image[^>]+href="data:image\//.test(svg), motionElements: (svg.match(/<animate(?:Motion|Transform)?\b/g) || []).length };
-        if (!result.portrait.embeddedAvatar || result.portrait.motionElements < 3) result.failures.push('Portrait or self-contained motion is missing.');
-      }
-      const portraitImage = readme.locator('img[alt^="Call me Yaswanth"]');
-      if (await portraitImage.count()) {
-        await portraitImage.scrollIntoViewIfNeeded();
-        const frameA = await portraitImage.screenshot({ type: 'png', animations: 'allow' });
-        await delay(1400);
-        const frameB = await portraitImage.screenshot({ type: 'png', animations: 'allow' });
-        result.motion = { differentFrames: !frameA.equals(frameB), intervalMs: 1400 };
-        if (!result.motion.differentFrames) result.failures.push('Portrait header showed no visible motion between frames.');
-        for (const [label, buffer] of [['frame-a', frameA], ['frame-b', frameB]]) {
-          await writeFile(outputDirectory + '/' + configuration.name + '-motion-' + label + '.png', buffer);
-        }
+        const response = await page.request.get(aboutImage.source);
+        const svg = await response.text();
+        result.portrait = { embeddedAvatar: /<image[^>]+href="data:image\//.test(svg) };
+        if (!result.portrait.embeddedAvatar) result.failures.push('Actual portrait was not retained in About.');
       }
       result.sectionMotion = [];
       for (const prefix of ['About Yaswanth', 'Engineering toolkit:', 'CortexAgent, MigrationLens', 'Engineering Telemetry:']) {

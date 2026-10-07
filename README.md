@@ -1,15 +1,17 @@
 <div align="center">
 
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/neon-banner-mobile.svg">
+  <img src="assets/neon-banner.svg" alt="Yaswanth Akkireddy — animated neon name banner with a blue-to-pink sky, retro grid and orbiting planets." width="100%">
+</picture>
+
 # Yaswanth Kumar Akkireddy
 
 **AI Engineer · Generative AI · Agentic AI · Retrieval-Augmented Generation (RAG)**
 
 LLM Evaluation · AI Reliability · AI Security & Red Teaming
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg?v=motion-20261007-b">
-  <img src="assets/hero.svg?v=motion-20261007-b" alt="Call me Yaswanth — actual GitHub portrait, Generative and Agentic AI Engineer. RAG, evaluation, reliability and security." width="100%">
-</picture>
+
 
 [LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy) · [GitHub](https://github.com/yaswanthakkireddy) · [Email](mailto:yaswanthkumarakkireddy@gmail.com)
 
@@ -20,8 +22,8 @@ LLM Evaluation · AI Reliability · AI Security & Red Teaming
 ## Engineering Profile
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/about-mobile.svg?v=motion-20261007-b">
-  <img src="assets/about.svg?v=motion-20261007-b" alt="About Yaswanth Kumar Akkireddy: Applied AI Engineer at Felix Byte, previously AI Red-Team Engineer at Aram Algorithm. AI systems workbench: retrieve, reason and verify." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/about-portrait-mobile.svg">
+  <img src="assets/about-portrait.svg" alt="About Yaswanth Kumar Akkireddy: actual GitHub portrait, Applied AI Engineer at Felix Byte, previously AI Red-Team Engineer at Aram Algorithm." width="100%">
 </picture>
 
 
