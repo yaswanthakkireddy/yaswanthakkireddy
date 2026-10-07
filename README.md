@@ -24,7 +24,10 @@ My work spans **Retrieval-Augmented Generation (RAG), multi-agent systems, LLM e
 
 **Core tools:** Python · LangGraph · LangChain · FastAPI · Docker · PostgreSQL · RAGAS · PyTorch
 
-<img src="assets/system.svg" alt="Engineering profile: agent orchestration, hybrid retrieval, evaluation and serving. Five flagship systems and two supporting projects, with project-scoped evaluation evidence." width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/system-mobile.svg">
+  <img src="assets/system.svg" alt="System map: CortexAgent and TOSCO for orchestration; NeuroShield and FairLend for decision systems; MigrationLens, ExperimentOS and ModelWatch for reliability tooling." width="100%">
+</picture>
 
 ## Flagship Systems
 
