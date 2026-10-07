@@ -1,34 +1,57 @@
 <div align="center">
 
-# Yaswanth Kumar Akkireddy
+# Yaswanth Kumar Akkireddy — AI Engineer, Bengaluru
 
-**AI Engineer · Generative AI · Agentic AI · Retrieval-Augmented Generation (RAG) · LLM Evaluation · AI Reliability & Security**
+**Generative AI · Agentic AI · Retrieval-Augmented Generation (RAG) · LLM Evaluation · AI Red Teaming · AI Reliability & Security**
 
-<img src="assets/v3/github-profile-v3/assets/v3/hero.svg" alt="Yaswanth Kumar Akkireddy, AI Engineer in Bengaluru: portrait in a camera viewfinder with cycling focus areas — agentic AI systems with LangGraph, RAG pipelines that cite their sources, LLM evaluation and red-team suites, guardrails for agent tool calls." width="100%">
-
-Applied AI Engineer at **Felix Byte Technologies** · Previously AI Red-Team Engineer at **Aram Algorithm** · Bengaluru, India  
-I build agentic AI and RAG systems in **Python, LangGraph and FastAPI**, with evaluation, guardrails and audit trails designed in. Open to AI Engineering roles across India and remote.
-
-[LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy) · [GitHub](https://github.com/yaswanthakkireddy) · [Email](mailto:yaswanthkumarakkireddy@gmail.com)
+<img src="assets/v3/github-profile-v3/assets/v3/hero.svg" alt="Yaswanth Kumar Akkireddy, AI Engineer in Bengaluru, India: portrait in a camera viewfinder with cycling focus areas — agentic AI systems with LangGraph, RAG pipelines that cite their sources, LLM evaluation and red-team suites, guardrails for agent tool calls." width="100%">
 
 </div>
 
-## What I build
+## About me
+
+I'm **Yaswanth Kumar Akkireddy**, an **AI Engineer in Bengaluru, India**. I work as an Applied AI Engineer at **Felix Byte Technologies**, and before that I was an **AI Red-Team Engineer at Aram Algorithm**, where I tested LLM applications against adversarial attacks.
+
+I build **agentic AI** and **retrieval-augmented generation (RAG)** systems in **Python, LangGraph and FastAPI**, with LLM evaluation, guardrails and audit trails designed in from the start. I hold an Integrated M.Tech in Computer Science (Business Analytics) from **VIT Chennai**.
+
+**Open to AI Engineer, Generative AI Engineer and LLM Engineer roles across India and remote.**
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/yaswanthakkireddy">LinkedIn</a> ·
+  <a href="https://github.com/yaswanthakkireddy">GitHub</a> ·
+  <a href="https://huggingface.co/yaswtutu">Hugging Face</a> ·
+  <a href="mailto:yaswanthkumarakkireddy@gmail.com">Email</a>
+</p>
+
+## What I build: agentic AI, RAG and LLM evaluation
 
 <p align="center">
   <img src="assets/v3/github-profile-v3/assets/v3/build.svg" alt="What I build: agentic AI with LangGraph and critic loops; RAG that cites its sources; LLM evaluation with RAGAS, LLM-as-judge and red-team suites; reliable ML with explainability, drift monitoring and fairness audits." width="49%">
   <img src="assets/v3/github-profile-v3/assets/v3/carousel.svg" alt="Beyond the day job: shipping open-source projects in public, exploring how LLMs are built from scratch to Indic continued pretraining, gym sessions with AI podcasts, and a nine-phase AI engineering roadmap." width="49%">
 </p>
 
-## Tech orbit
+- **Agentic AI:** multi-agent workflows in LangGraph with critic loops, controlled tool use and the Model Context Protocol (MCP).
+- **RAG that cites its sources:** hybrid BM25 + dense retrieval, cross-encoder reranking and answers grounded in source documents.
+- **LLM evaluation and red teaming:** RAGAS quality gates, LLM-as-judge rubrics and adversarial test suites.
+- **Reliable machine learning:** explainability with SHAP, data-drift monitoring and fairness audits.
+
+## Tech stack and AI engineering toolkit
 
 <img src="assets/v3/github-profile-v3/assets/v3/orbit.svg" alt="Tech orbit and toolkit — agents: LangGraph, LangChain, MCP; retrieval: BM25 + dense hybrid search, cross-encoder reranking, ChromaDB; evaluation: RAGAS, LLM-as-judge, red teaming, pytest; serving: Python, FastAPI, Docker, PostgreSQL; ML: PyTorch, PyTorch Geometric, LightGBM, SHAP." width="100%">
 
-## ID badge & dashboard
+| Area | Tools |
+| --- | --- |
+| Agents | LangGraph, LangChain, Model Context Protocol (MCP), multi-agent orchestration |
+| Retrieval | BM25 + dense hybrid search, cross-encoder reranking, ChromaDB |
+| Evaluation | RAGAS, LLM-as-judge, AI red teaming, pytest |
+| Serving | Python, FastAPI, Docker, PostgreSQL, Redis, GitHub Actions |
+| Machine learning | PyTorch, PyTorch Geometric, LightGBM, SHAP, Fairlearn, Evidently AI |
+
+## ID badge and project dashboard
 
 <img src="assets/v3/github-profile-v3/assets/v3/badge.svg" alt="ID badge for Yaswanth Kumar Akkireddy, AI Engineer, beside a dashboard: 7 flagship repositories, 20/20 adversarial probes passed in the CortexAgent benchmark, 37/37 MigrationLens benchmark findings, 380+ test functions across repositories." width="100%">
 
-## Projects
+## AI and machine learning projects
 
 | Project | What it does | Verified result | Stack |
 | --- | --- | --- | --- |
@@ -42,14 +65,14 @@ I build agentic AI and RAG systems in **Python, LangGraph and FastAPI**, with ev
 
 <img src="assets/v3/github-profile-v3/assets/v3/city.svg" alt="3D contribution city: an isometric night skyline where every tower is a day with public GitHub contributions, rebuilt daily." width="100%">
 
-## Connect
+## Connect with me
 
 <img src="assets/v3/github-profile-v3/assets/v3/footer.svg" alt="Yaswanth Kumar Akkireddy pointing to LinkedIn, GitHub and email: let's build AI that holds up in production." width="100%">
 
 <div align="center">
 
-**[LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy)** · **[GitHub](https://github.com/yaswanthakkireddy)** · **[Email](mailto:yaswanthkumarakkireddy@gmail.com)**
+**[LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy)** · **[GitHub](https://github.com/yaswanthakkireddy)** · **[Hugging Face](https://huggingface.co/yaswtutu)** · **[Email](mailto:yaswanthkumarakkireddy@gmail.com)**
 
-<sub>All visuals are self-hosted SVGs; the contribution city refreshes daily through GitHub Actions.</sub>
+<sub>Yaswanth Kumar Akkireddy · AI Engineer · Bengaluru, India · All visuals are self-hosted SVGs; the contribution city refreshes daily through GitHub Actions.</sub>
 
 </div>
