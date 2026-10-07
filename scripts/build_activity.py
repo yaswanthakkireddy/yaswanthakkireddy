@@ -210,6 +210,13 @@ def render(rows: list[dict]) -> str:
     motion = (f'<g aria-hidden="true"><rect x="32" y="{y}" width="60" height="2" '
               f'fill="#00c8ff"><animate attributeName="x" values="32;{width - 92};32" '
               'dur="10s" repeatCount="indefinite"/></rect></g>')
+    if width == 600:
+        motion += '<g aria-hidden="true">'
+        for i in range(len(PROJECTS)):
+            motion += (f'<circle cx="18" cy="{142 + i * 196 + 94}" r="3" fill="#00c8ff">'
+                       f'<animate attributeName="opacity" values=".2;.9;.2" dur="4s" begin="{i % 3}s" '
+                       'repeatCount="indefinite"/></circle>')
+        motion += '</g>'
     return svg.replace("</svg>", motion + "</svg>")
 
 
