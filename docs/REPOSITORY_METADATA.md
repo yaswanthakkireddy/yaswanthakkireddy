@@ -17,7 +17,7 @@ Profile settings: https://github.com/settings/profile
 
 ## Pinned repositories
 
-Use this order: **cortexagent → MigrationLens → NeuroShield → fairlend → ExperimentOS → modelwatch**.
+Use this order: **TOSCO → cortexagent → MigrationLens → NeuroShield → fairlend → modelwatch**.
 
 Pins are managed on https://github.com/yaswanthakkireddy via **Customize your pins**.
 
@@ -27,6 +27,7 @@ The six project repositories returned empty descriptions and topics in the API a
 
 | Repository | Description | Suggested topics |
 | --- | --- | --- |
+| [TOSCO](https://github.com/yaswanthakkireddy/TOSCO) | Agent-action clearance prototype with typed evidence, deterministic gates, SHA256 proof chains and HMAC-authorized mock-bank execution. | agentic-ai, ai-security, fastapi, pydantic, auditability, financial-ai |
 | [cortexagent](https://github.com/yaswanthakkireddy/cortexagent) | Multi-agent RAG for SEC 10-K research with hybrid retrieval, critic-gated revision and scoped adversarial evaluation. | agentic-ai, rag, langgraph, llm-evaluation, retrieval-augmented-generation |
 | [MigrationLens](https://github.com/yaswanthakkireddy/MigrationLens) | Deterministic-first MySQL-to-PostgreSQL migration risk analysis with SQL parsing, validated fixes and SARIF reports. | postgresql, sql, database-migration, sqlglot, static-analysis, sarif |
 | [NeuroShield](https://github.com/yaswanthakkireddy/NeuroShield) | Transaction-graph learning for anti-money-laundering research with temporal evaluation and explainability. | graph-neural-networks, pytorch-geometric, explainable-ai, anti-money-laundering |
@@ -42,3 +43,14 @@ These suggestions describe documented project features. Add a deployment URL onl
 TOSCO is featured as an agent-action clearance prototype. Its evidence is the typed contract, deterministic gates, SHA256 proof chain and HMAC token flow documented in its repository. Keep seeded-evidence and mock-bank scope visible. Do not present documented test counts as a newly verified run, or the historical Vultr proof as a currently hosted production service.
 
 Suggested six pins: TOSCO, CortexAgent, MigrationLens, NeuroShield, FairLend and ModelWatch. ExperimentOS remains a supporting README card; CarbonLedgerX stays in More Work.
+
+
+## Profile repository discovery
+
+For `yaswanthakkireddy/yaswanthakkireddy`, suggested About description: **Yaswanth Kumar Akkireddy — AI Engineer building Generative AI, agentic RAG, LLM evaluation and auditable AI systems.**
+
+Suggested topics: `ai-engineer`, `generative-ai`, `agentic-ai`, `rag`, `llm-evaluation`, `ai-security`, `langgraph`, `portfolio`, `github-profile-readme`.
+
+Native README text, meaningful links and truthful project summaries are maintained in the repository. Search-engine rankings are not measured or guaranteed. GitHub controls profile-page HTML metadata; a README cannot set page-level meta tags.
+
+[GitHub topic guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics) · [Recruiter-oriented profile guidance](https://docs.github.com/en/account-and-profile/tutorials/using-your-github-profile-to-enhance-your-resume).
