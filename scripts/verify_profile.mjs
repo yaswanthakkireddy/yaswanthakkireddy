@@ -137,6 +137,21 @@ try {
         result.portrait = { embeddedAvatar: /<image[^>]+href="data:image\//.test(svg), motionElements: (svg.match(/<animate(?:Motion|Transform)?\b/g) || []).length };
         if (!result.portrait.embeddedAvatar || result.portrait.motionElements < 3) result.failures.push('Portrait or self-contained motion is missing.');
       }
+      const portraitImage = readme.locator('img[alt^="Call me Yaswanth"]');
+      if (await portraitImage.count()) {
+        await portraitImage.scrollIntoViewIfNeeded();
+        const frameA = await portraitImage.screenshot({ type: 'png', animations: 'allow' });
+        await delay(1400);
+        const frameB = await portraitImage.screenshot({ type: 'png', animations: 'allow' });
+        result.motion = { differentFrames: !frameA.equals(frameB), intervalMs: 1400 };
+        if (!result.motion.differentFrames) result.failures.push('Portrait header showed no visible motion between frames.');
+        for (const [label, buffer] of [['frame-a', frameA], ['frame-b', frameB]]) {
+          await writeFile(outputDirectory + '/' + configuration.name + '-motion-' + label + '.png', buffer);
+        }
+      }
+      const visibleText = await readme.innerText();
+      result.searchableIdentity = ['Yaswanth Kumar Akkireddy', 'Generative AI', 'Agentic AI', 'Retrieval-Augmented Generation', 'LLM evaluation', 'FastAPI'].every(term => visibleText.includes(term));
+      if (!result.searchableIdentity) result.failures.push('Core identity or engineering terms are missing from native README text.');
       result.layout = await readme.evaluate(element => {
         const rect = element.getBoundingClientRect();
         return {

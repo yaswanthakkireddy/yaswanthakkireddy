@@ -47,8 +47,15 @@ function render(mobile) {
   }
   s+='</svg>\n'; return s;
 }
+function enhance(svg,mobile) {
+ const cx=mobile?300:936,cy=mobile?279:287,r=mobile?195:216;
+ svg=svg.replace('dur="32s"','dur="12s"');
+ const rings=['#00c8ff','#a3ff39','#ffd537'].map((c,i)=>`<circle cx="${cx+r}" cy="${cy}" r="${i===0?6:4}" fill="${c}"><animateTransform attributeName="transform" type="rotate" from="${i*120} ${cx} ${cy}" to="${i*120+360} ${cx} ${cy}" dur="${8+i*3}s" repeatCount="indefinite"/></circle>`).join("");
+ const signal=`<g aria-hidden="true">${rings}<rect x="${mobile?30:42}" y="${mobile?819:569}" width="80" height="2" rx="1" fill="#00c8ff"><animate attributeName="x" values="${mobile?'30;490;30':'42;1078;42'}" dur="8s" repeatCount="indefinite"/></rect><circle cx="${cx}" cy="${cy}" r="${r+4}" fill="none" stroke="#ff4b2e" stroke-width="2"><animate attributeName="opacity" values=".15;.7;.15" dur="5s" repeatCount="indefinite"/></circle></g>`;
+ return svg.replace("</svg>",signal+"</svg>");
+}
 await mkdir('assets', {recursive:true});
-await writeFile('assets/hero.svg', render(false));
-await writeFile('assets/hero-mobile.svg', render(true));
+await writeFile('assets/hero.svg', enhance(render(false), false));
+await writeFile('assets/hero-mobile.svg', enhance(render(true), true));
 await writeFile('assets/portrait-source.json', JSON.stringify({source:portraitUrl,format:mime,note:'Public GitHub avatar; original pixels preserved. Refresh only when the source avatar changes.'},null,2)+'\n');
 console.log('Generated portrait headers from the actual public GitHub avatar ('+bytes.length+' bytes).');

@@ -2,9 +2,9 @@
 
 # Yaswanth Kumar Akkireddy
 
-**AI Engineer building reliable Generative & Agentic AI systems.**
+**AI Engineer · Generative AI · Agentic AI · Retrieval-Augmented Generation (RAG)**
 
-Generative AI · Agentic AI · RAG · LLM Evaluation · Reliability · Security
+LLM Evaluation · AI Reliability · AI Security & Red Teaming
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg">
@@ -13,6 +13,8 @@ Generative AI · Agentic AI · RAG · LLM Evaluation · Reliability · Security
 
 [LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy) · [GitHub](https://github.com/yaswanthakkireddy) · [Email](mailto:yaswanthkumarakkireddy@gmail.com)
 
+**Explore:** [Agentic RAG → CortexAgent](https://github.com/yaswanthakkireddy/cortexagent) · [Agent execution safety → TOSCO](https://github.com/yaswanthakkireddy/TOSCO) · [SQL migration analysis → MigrationLens](https://github.com/yaswanthakkireddy/MigrationLens)
+
 </div>
 
 ## Engineering Profile
@@ -20,8 +22,9 @@ Generative AI · Agentic AI · RAG · LLM Evaluation · Reliability · Security
 Applied AI Engineer at **Felix Byte Technologies** · Previously AI Red-Team Engineer at **Aram Algorithm**  
 Bengaluru, India · Open to AI Engineering roles across India / Remote
 
-My work spans **Retrieval-Augmented Generation (RAG), multi-agent systems, LLM evaluation, AI reliability, and AI security / red teaming**.
+I build **Generative AI and agentic systems** with Python, LangGraph and FastAPI: source-grounded **RAG**, multi-agent orchestration, **LLM evaluation**, deterministic guardrails and auditable tool execution. My AI red-teaming experience informs how I test failures and define safety boundaries.
 
+**Engineering focus:** retrieval quality · agent tool safety · reproducible evaluation · explainability · observability  
 **Core tools:** Python · LangGraph · LangChain · FastAPI · Docker · PostgreSQL · RAGAS · PyTorch
 
 <picture>
