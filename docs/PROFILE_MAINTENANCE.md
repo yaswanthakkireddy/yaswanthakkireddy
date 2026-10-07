@@ -5,7 +5,7 @@ The public repository `yaswanthakkireddy/yaswanthakkireddy` serves the root `REA
 ## Information hierarchy
 
 1. Identity and engineering profile
-2. Four flagship systems: CortexAgent, MigrationLens, NeuroShield, FairLend
+2. Five flagship systems: featured TOSCO, CortexAgent, MigrationLens, NeuroShield, FairLend
 3. Reliability-first AI Engineering
 4. Supporting systems: ExperimentOS and ModelWatch
 5. Engineering Telemetry with evidence links
@@ -29,7 +29,7 @@ For new results, update the linked evidence, the README, relevant SVG text/alt t
 
 ## Telemetry operation
 
-`scripts/build_activity.py` generates `assets/activity.svg` from public GitHub repository metadata and workflow data. It excludes this profile repository, uses fixed project order and absolute activity dates, and does not render the current date or relative ages.
+`scripts/build_activity.py` generates `assets/activity.svg` and `assets/activity-mobile.svg` from public GitHub repository metadata and workflow data. It excludes this profile repository, uses fixed project order and absolute activity dates, and does not render the current date or relative ages.
 
 CI status must be tied to the current default-branch commit. A previously successful run is not evidence that a newer commit passed. API failure should fail the job and preserve the last committed asset.
 
@@ -45,7 +45,7 @@ Suggested bio: **AI Engineer | Agentic AI · RAG · LLM Evaluation, Reliability 
 
 Website: https://www.linkedin.com/in/yaswanthakkireddy
 
-Pinned order: cortexagent, MigrationLens, NeuroShield, fairlend, ExperimentOS, modelwatch.
+Pinned order: TOSCO, cortexagent, MigrationLens, NeuroShield, fairlend, modelwatch.
 
 Repository descriptions and topics are account/repository metadata, not fields in this README. Do not claim those settings were changed unless they were saved through GitHub and verified.
 
