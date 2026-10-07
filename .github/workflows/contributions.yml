@@ -1,0 +1,47 @@
+name: Contribution Signal
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - scripts/build_contributions.mjs
+      - .github/workflows/contributions.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-signal
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Install pinned browser tooling
+        run: npm install --no-save --package-lock=false --ignore-scripts playwright@1.63.0
+      - name: Install Chromium
+        run: npx --no-install playwright install --with-deps chromium
+      - name: Validate and build from the real public calendar
+        run: node scripts/build_contributions.mjs
+      - name: Publish only changed contribution data
+        run: |
+          git add assets/contribution-signal.svg assets/contribution-signal-mobile.svg assets/contribution-source.json
+          if git diff --cached --quiet; then
+            echo "Contribution activity unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh real public contribution signal"
+          git pull --rebase origin main
+          git push
