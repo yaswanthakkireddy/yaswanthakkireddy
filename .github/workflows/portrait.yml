@@ -1,0 +1,44 @@
+name: Build portrait header
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/build_portrait.mjs
+      - .github/workflows/portrait.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portrait-header
+  cancel-in-progress: false
+
+jobs:
+  portrait:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: true
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Generate actual portrait headers
+        run: node scripts/build_portrait.mjs
+      - name: Publish changed portrait assets
+        run: |
+          git add assets/hero.svg assets/hero-mobile.svg assets/portrait-source.json
+          if git diff --cached --quiet; then
+            echo "Portrait assets unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh portrait header from actual GitHub avatar"
+          git push
