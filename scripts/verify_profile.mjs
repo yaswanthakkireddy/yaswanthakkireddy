@@ -191,11 +191,11 @@ try {
       }
 
       const sections = configuration.isMobile
-        ? [['top', headings[0]], ['engineering', 'Engineering Profile'], ['toolkit', 'Engineering Toolkit'], ['flagship', 'Flagship Systems'], ['supporting', 'Supporting Systems'], ['contributions', 'Contribution Signal'], ['telemetry', 'Engineering Telemetry']]
+        ? [['top', headings[0]], ['engineering', 'Engineering Profile'], ['toolkit', 'Engineering Toolkit'], ['flagship', 'Flagship Systems'], ['selected', 'Selected repositories'], ['supporting', 'Supporting Systems'], ['contributions', 'Contribution Signal'], ['telemetry', 'Engineering Telemetry']]
         : [
           ['top', headings[0]],
           ['engineering', 'Engineering Profile'],
-          ['flagship', 'Flagship Systems'],
+          ['flagship', 'Flagship Systems'], ['selected', 'Selected repositories'],
           ['reliability', 'Reliability-first AI Engineering'],
           ['toolkit', 'Engineering Toolkit'],
           ['supporting', 'Supporting Systems'],

@@ -15,7 +15,7 @@ function normalize(rows) {
   }).sort((a,b) => a.date.localeCompare(b.date)).map(({date,level}) => ({date,level}));
 }
 function render(days,mobile) {
-  const w=mobile?600:1200,h=mobile?670:390;
+  const w=mobile?600:1200,h=mobile?710:390;
   const monthCounts = Array.from({length:12},(_,i)=>days.filter(d=>Number(d.date.slice(5,7))===i+1).length);
   const counts = new Map(days.map(d=>[d.date,d.level]));
   const text=(x,y,s,size=20,c='#a8bfd1',weight=400)=>'<text x="'+x+'" y="'+y+'" font-family="Segoe UI,Arial,sans-serif" font-size="'+size+'" font-weight="'+weight+'" fill="'+c+'">'+s+'</text>';
@@ -41,11 +41,11 @@ function render(days,mobile) {
   }
   svg+=text(gx,gy+96,'GitHub daily intensity · empty slots remain unfilled',mobile?18:16);
   if(mobile){
-    svg+=text(30,475,'Real activity. A clear signal.',29,'#eafaff',600);
-    svg+=text(30,513,'Colors reflect GitHub intensity levels.',22);
-    svg+=text(30,551,'Bars count active days, not commits.',22);
+    svg+=text(30,505,'Real activity. A clear signal.',29,'#eafaff',600);
+    svg+=text(30,548,'Colors reflect GitHub intensity levels.',22);
+    svg+=text(30,586,'Bars count active days, not commits.',22);
   }
-  const ly=mobile?590:300;
+  const ly=mobile?635:300;
   svg+=text(30,ly,'LESS',mobile?17:14);
   colors.forEach((c,i)=>svg+='<rect x="'+(90+i*27)+'" y="'+(ly-16)+'" width="20" height="20" rx="4" fill="'+c+'"/>');
   svg+=text(240,ly,'MORE',mobile?17:14);

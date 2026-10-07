@@ -118,7 +118,7 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 ## Contribution Signal
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/contribution-signal-mobile.svg">
+  <source media="(max-width: 600px)" srcset="assets/contribution-signal-mobile.svg?v=blue-mint-spacing">
   <img src="assets/contribution-signal.svg" alt="Contribution Signal: real public GitHub calendar intensity for 2026 and active contribution days per month, styled in blue and mint." width="100%">
 </picture>
 
