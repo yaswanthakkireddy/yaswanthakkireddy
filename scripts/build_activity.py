@@ -58,7 +58,7 @@ SANS = "Inter, 'Segoe UI', Arial, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 COLORS = {
     "ink": "#F1F6FF", "soft": "#B6C2D9", "muted": "#8995AD",
-    "cyan": "#00C8FF", "good": "#A3FF39", "warn": "#FBBF24",
+    "cyan": "#53BFFF", "good": "#9FF5D5", "warn": "#FBBF24",
     "bad": "#FB7185",
 }
 
@@ -164,12 +164,12 @@ def animate_svg(svg: str) -> str:
     width = 600 if 'width="600"' in svg[:180] else 1200
     y = 134 if width == 600 else 138
     motion = (f'<g aria-hidden="true"><rect x="32" y="{y}" width="60" height="2" '
-              f'fill="#00c8ff"><animate attributeName="x" values="32;{width - 92};32" '
+              f'fill="#53bfff"><animate attributeName="x" values="32;{width - 92};32" '
               'dur="10s" repeatCount="indefinite"/></rect></g>')
     if width == 600:
         motion += '<g aria-hidden="true">'
         for i in range(len(PROJECTS)):
-            motion += (f'<circle cx="18" cy="{142 + i * 196 + 94}" r="3" fill="#00c8ff">'
+            motion += (f'<circle cx="18" cy="{142 + i * 196 + 94}" r="3" fill="#53bfff">'
                        f'<animate attributeName="opacity" values=".2;.9;.2" dur="4s" begin="{i % 3}s" '
                        'repeatCount="indefinite"/></circle>')
         motion += '</g>'
@@ -188,12 +188,12 @@ def render(rows: list[dict]) -> str:
         'absolute last-main-commit dates in UTC. '
         'Recorded test counts are not live test results.</desc>',
         '<defs><linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">'
-        '<stop stop-color="#00C8FF" stop-opacity=".65"/>'
+        '<stop stop-color="#53BFFF" stop-opacity=".65"/>'
         '<stop offset="1" stop-color="#3B82F6" stop-opacity=".22"/>'
         '</linearGradient></defs>',
         f'<rect x="1" y="1" width="1198" height="{height - 2}" rx="24" '
         'fill="#05070E" stroke="url(#edge)"/>',
-        f'<rect x="18" y="18" width="1164" height="{height - 36}" rx="16" fill="#090D16"/>',
+        f'<rect x="18" y="18" width="1164" height="{height - 36}" rx="16" fill="#0b2130"/>',
         _text(48, 62, "ENGINEERING TELEMETRY", size=16, color="cyan", weight=600, mono=True),
         _text(48, 97, "Evidence and recent engineering", size=27, color="ink", weight=700),
         _text(48, 126, "Scoped results, main-branch CI, and last main commit dates (UTC).", size=17),
@@ -234,7 +234,7 @@ def render_mobile(rows: list[dict]) -> str:
         '<desc id="desc">Mobile layout of the same scoped project evidence, '
         'main-commit dates in UTC, and main-HEAD CI snapshot.</desc>',
         f'<rect x="1" y="1" width="598" height="{height - 2}" rx="24" fill="#05070E" '
-        'stroke="#00C8FF" stroke-opacity=".4"/>',
+        'stroke="#53BFFF" stroke-opacity=".4"/>',
         _text(32, 60, "ENGINEERING TELEMETRY", size=24, color="cyan", weight=600),
         _text(32, 98, "Evidence + latest main CI", size=26, color="ink", weight=700),
         _text(32, 126, "Recorded project scope", size=20, color="muted"),

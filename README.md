@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/neon-banner-mobile.svg">
-  <img src="assets/neon-banner.svg" alt="Yaswanth Akkireddy — animated neon name banner with a blue-to-pink sky, retro grid and orbiting planets." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/neon-banner-mobile.svg?v=blue-mint-20261007">
+  <img src="assets/neon-banner.svg?v=blue-mint-20261007" alt="Yaswanth Akkireddy — animated neon name banner with a blue-to-pink sky, retro grid and orbiting planets." width="100%">
 </picture>
 
 # Yaswanth Kumar Akkireddy
@@ -22,8 +22,8 @@ LLM Evaluation · AI Reliability · AI Security & Red Teaming
 ## Engineering Profile
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/about-portrait-mobile.svg">
-  <img src="assets/about-portrait.svg" alt="About Yaswanth Kumar Akkireddy: actual GitHub portrait, Applied AI Engineer at Felix Byte, previously AI Red-Team Engineer at Aram Algorithm." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/about-portrait-mobile.svg?v=blue-mint-20261007">
+  <img src="assets/about-portrait.svg?v=blue-mint-20261007" alt="About Yaswanth Kumar Akkireddy: actual GitHub portrait, Applied AI Engineer at Felix Byte, previously AI Red-Team Engineer at Aram Algorithm." width="100%">
 </picture>
 
 
@@ -36,16 +36,16 @@ I build **Generative AI and agentic systems** with Python, LangGraph and FastAPI
 **Core tools:** Python · LangGraph · LangChain · FastAPI · Docker · PostgreSQL · RAGAS · PyTorch
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/system-mobile.svg?v=motion-20261007-b">
-  <img src="assets/system.svg?v=motion-20261007-b" alt="System map: CortexAgent and TOSCO for orchestration; NeuroShield and FairLend for decision systems; MigrationLens, ExperimentOS and ModelWatch for reliability tooling." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/system-mobile.svg?v=blue-mint-20261007">
+  <img src="assets/system.svg?v=blue-mint-20261007" alt="System map: CortexAgent and TOSCO for orchestration; NeuroShield and FairLend for decision systems; MigrationLens, ExperimentOS and ModelWatch for reliability tooling." width="100%">
 </picture>
 
 ## Flagship Systems
 
 <a href="https://github.com/yaswanthakkireddy/TOSCO">
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/projects/tosco-mobile.svg?v=motion-20261007-b">
-  <img src="assets/projects/tosco.svg?v=motion-20261007-b" alt="TOSCO — clearance for AI financial actions: payment intent, deterministic gates, sealed proof and token-bound mock-bank execution. Hackathon prototype with seeded evidence." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/projects/tosco-mobile.svg?v=blue-mint-20261007">
+  <img src="assets/projects/tosco.svg?v=blue-mint-20261007" alt="TOSCO — clearance for AI financial actions: payment intent, deterministic gates, sealed proof and token-bound mock-bank execution. Hackathon prototype with seeded evidence." width="100%">
 </picture>
 </a>
 
@@ -63,10 +63,14 @@ I build **Generative AI and agentic systems** with Python, LangGraph and FastAPI
 </details>
 
 
+### Selected repositories
+
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/projects/core-mobile.svg?v=motion-20261007-b">
-  <img src="assets/projects/core-desktop.svg?v=motion-20261007-b" alt="CortexAgent, MigrationLens, NeuroShield and FairLend — four core systems with project-scoped evidence. Repository links and descriptions below." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/selected-repositories-mobile.svg">
+  <img src="assets/selected-repositories.svg" alt="Selected repository gallery: TOSCO, CortexAgent, MigrationLens, NeuroShield, FairLend and ModelWatch. Native repository links and details below." width="100%">
 </picture>
+
+[**TOSCO**](https://github.com/yaswanthakkireddy/TOSCO) · [**CortexAgent**](https://github.com/yaswanthakkireddy/cortexagent) · [**MigrationLens**](https://github.com/yaswanthakkireddy/MigrationLens) · [**NeuroShield**](https://github.com/yaswanthakkireddy/NeuroShield) · [**FairLend**](https://github.com/yaswanthakkireddy/fairlend) · [**ModelWatch**](https://github.com/yaswanthakkireddy/modelwatch)
 
 **[CortexAgent](https://github.com/yaswanthakkireddy/cortexagent)** — SEC 10-K research with LangGraph, hybrid retrieval, reranking, critic-gated revision and RAGAS evaluation.
 
@@ -82,7 +86,7 @@ Capability is only half the system.
 
 I care about what happens when retrieval is weak, a model hallucinates, or an agent attempts an unsafe tool action. My work combines AI engineering with structured evaluation, guardrails, auditability and adversarial testing, informed by my experience red teaming LLMs.
 
-<img src="assets/loop.svg?v=motion-20261007-b" alt="Reliability-first design loop: query, retrieve, reason, verify and act, with revision and an audit trace." width="100%">
+<img src="assets/loop.svg?v=blue-mint-20261007" alt="Reliability-first design loop: query, retrieve, reason, verify and act, with revision and an audit trace." width="100%">
 
 - **Evaluate:** define the task, dataset and behavioral contract before interpreting a score.
 - **Constrain:** use deterministic checks and validate model output before accepting it.
@@ -91,8 +95,8 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 ## Engineering Toolkit
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/toolkit-mobile.svg?v=motion-20261007-b">
-  <img src="assets/toolkit.svg?v=motion-20261007-b" alt="Engineering toolkit: LangGraph, LangChain and RAGAS; Python, FastAPI and Docker; PostgreSQL, PyTorch and sqlglot; SHAP, Fairlearn and ModelWatch." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/toolkit-mobile.svg?v=blue-mint-20261007">
+  <img src="assets/toolkit.svg?v=blue-mint-20261007" alt="Engineering toolkit: LangGraph, LangChain and RAGAS; Python, FastAPI and Docker; PostgreSQL, PyTorch and sqlglot; SHAP, Fairlearn and ModelWatch." width="100%">
 </picture>
 
 **Agents & retrieval:** LangGraph · LangChain · RAGAS  
@@ -103,19 +107,29 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 ## Supporting Systems
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/projects/supporting-mobile.svg?v=motion-20261007-b">
-  <img src="assets/projects/supporting-desktop.svg?v=motion-20261007-b" alt="Supporting systems: ExperimentOS for experiments and ModelWatch for drift and model monitoring." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/projects/supporting-mobile.svg?v=blue-mint-20261007">
+  <img src="assets/projects/supporting-desktop.svg?v=blue-mint-20261007" alt="Supporting systems: ExperimentOS for experiments and ModelWatch for drift and model monitoring." width="100%">
 </picture>
 
 **[ExperimentOS](https://github.com/yaswanthakkireddy/ExperimentOS)** — Bayesian A/B testing with CUPED variance reduction, funnel and retention analysis.
 
 **[ModelWatch](https://github.com/yaswanthakkireddy/modelwatch)** — drift and model-decay monitoring with PSI/KS, SHAP drift and a champion–challenger loop.
 
+## Contribution Signal
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/contribution-signal-mobile.svg">
+  <img src="assets/contribution-signal.svg" alt="Contribution Signal: real public GitHub calendar intensity for 2026 and active contribution days per month, styled in blue and mint." width="100%">
+</picture>
+
+[View the source calendar](https://github.com/yaswanthakkireddy?tab=overview&from=2026-01-01&to=2026-12-31) · [Snapshot data](assets/contribution-source.json)  
+Daily refresh; unchanged activity creates no commit. Bars count active days, not commits. Public activity can include automation.
+
 ## Engineering Telemetry
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg?v=motion-20261007-d">
-  <img src="assets/activity.svg?v=motion-20261007-b" alt="Engineering Telemetry: seven selected systems, scoped evaluation evidence, absolute main-commit dates in UTC and CI status checked against each main-branch commit." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg?v=blue-mint-20261007">
+  <img src="assets/activity.svg?v=blue-mint-20261007" alt="Engineering Telemetry: seven selected systems, scoped evaluation evidence, absolute main-commit dates in UTC and CI status checked against each main-branch commit." width="100%">
 </picture>
 
 Scheduled daily from GitHub; the snapshot changes only when its underlying evidence, activity or CI state changes. Repository activity is not a productivity score, and CI success does not establish model safety.
@@ -145,7 +159,7 @@ Results belong to the linked datasets, fixtures or runs. They are not production
 
 <br>
 
-<img src="assets/footer.svg?v=motion-20261007-b" alt="Connect with Yaswanth Kumar Akkireddy. Open to AI Engineering opportunities across India and remote." width="100%">
+<img src="assets/footer.svg?v=blue-mint-20261007" alt="Connect with Yaswanth Kumar Akkireddy. Open to AI Engineering opportunities across India and remote." width="100%">
 
 <p align="center">
   <a href="https://www.linkedin.com/in/yaswanthakkireddy"><b>LinkedIn</b></a> ·

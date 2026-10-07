@@ -12,6 +12,7 @@ const headings = [
   'Reliability-first AI Engineering',
   'Engineering Toolkit',
   'Supporting Systems',
+  'Contribution Signal',
   'Engineering Telemetry',
   'More Work',
 ];
@@ -146,7 +147,7 @@ try {
         if (!result.portrait.embeddedAvatar) result.failures.push('Actual portrait was not retained in About.');
       }
       result.sectionMotion = [];
-      for (const prefix of ['About Yaswanth', 'Engineering toolkit:', 'CortexAgent, MigrationLens', 'Engineering Telemetry:']) {
+      for (const prefix of ['About Yaswanth', 'Engineering toolkit:', 'Selected repository gallery:', 'Engineering Telemetry:', 'Contribution Signal:']) {
         const target = readme.locator('img[alt^="' + prefix + '"]');
         if (!await target.count()) { result.failures.push('Missing animated section: ' + prefix); continue; }
         await target.scrollIntoViewIfNeeded();
@@ -190,7 +191,7 @@ try {
       }
 
       const sections = configuration.isMobile
-        ? [['top', headings[0]], ['engineering', 'Engineering Profile'], ['toolkit', 'Engineering Toolkit'], ['flagship', 'Flagship Systems'], ['supporting', 'Supporting Systems'], ['telemetry', 'Engineering Telemetry']]
+        ? [['top', headings[0]], ['engineering', 'Engineering Profile'], ['toolkit', 'Engineering Toolkit'], ['flagship', 'Flagship Systems'], ['supporting', 'Supporting Systems'], ['contributions', 'Contribution Signal'], ['telemetry', 'Engineering Telemetry']]
         : [
           ['top', headings[0]],
           ['engineering', 'Engineering Profile'],
@@ -198,6 +199,7 @@ try {
           ['reliability', 'Reliability-first AI Engineering'],
           ['toolkit', 'Engineering Toolkit'],
           ['supporting', 'Supporting Systems'],
+          ['contributions', 'Contribution Signal'],
           ['telemetry', 'Engineering Telemetry'],
         ];
       for (const [section, heading] of sections) {

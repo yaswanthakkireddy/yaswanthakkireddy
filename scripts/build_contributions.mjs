@@ -22,7 +22,7 @@ function render(days,mobile) {
   let svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'" role="img"><title>GitHub contribution signal for '+year+'</title><desc>Public GitHub daily intensity and active days per month. No invented contribution counts.</desc><defs><linearGradient id="bar" x2="0" y2="1"><stop stop-color="#9ff5d5"/><stop offset="1" stop-color="#287eb3"/></linearGradient></defs><rect x="1" y="1" width="'+(w-2)+'" height="'+(h-2)+'" rx="22" fill="#07141f" stroke="#459dcc" stroke-opacity=".4"/>';
   svg+=text(30,48,'CONTRIBUTION SIGNAL / '+year,mobile?23:19,'#9ff5d5',700)+text(30,91,days.length+' active public contribution days',mobile?29:33,'#eafaff',700);
   const names=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
-  const bx=mobile?30:660,by=mobile?265:95,bw=mobile?540:510,step=bw/12;
+  const bx=mobile?30:660,by=mobile?300:95,bw=mobile?540:510,step=bw/12;
   const max=Math.max(1,...monthCounts);
   svg+=text(bx,by-18,'ACTIVE DAYS PER MONTH',mobile?19:16,'#9ff5d5',600);
   monthCounts.forEach((n,i)=>{
