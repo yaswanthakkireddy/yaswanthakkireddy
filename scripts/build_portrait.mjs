@@ -54,8 +54,19 @@ function enhance(svg,mobile) {
  const signal=`<g aria-hidden="true">${rings}<rect x="${mobile?30:42}" y="${mobile?819:569}" width="80" height="2" rx="1" fill="#00c8ff"><animate attributeName="x" values="${mobile?'30;490;30':'42;1078;42'}" dur="8s" repeatCount="indefinite"/></rect><circle cx="${cx}" cy="${cy}" r="${r+4}" fill="none" stroke="#ff4b2e" stroke-width="2"><animate attributeName="opacity" values=".15;.7;.15" dur="5s" repeatCount="indefinite"/></circle></g>`;
  return svg.replace("</svg>",signal+"</svg>");
 }
+function cosmic(svg,mobile){
+const w=mobile?600:1200,h=mobile?870:640;
+let scene='<g aria-hidden="true">';
+for(let i=0;i<24;i++){const x=25+(i*173)%(w-50),y=76+(i*71)%(mobile?390:395);scene+=`<circle cx="${x}" cy="${y}" r="${i%3===0?1.7:1}" fill="${i%3===0?'#00c8ff':'#e8edff'}" opacity=".2"><animate attributeName="opacity" values=".1;.4;.1" dur="${5+i%4}s" begin="${i%4}s" repeatCount="indefinite"/></circle>`;}
+const top=h-118,bottom=h-12;
+scene+=`<g stroke="#00c8ff" stroke-width="1" opacity=".1">`;
+for(let i=0;i<=12;i++){const x=i*w/12;scene+=`<path d="M${w/2+(x-w/2)*.18} ${top}L${x} ${bottom}"/>`;}
+for(const fraction of [.04,.12,.27,.48,.75,1]){const y=top+(bottom-top)*fraction;scene+=`<path d="M24 ${y}H${w-24}"/>`;}
+scene+='</g></g>';
+return svg.replace('fill="url(#grid)"/>','fill="url(#grid)"/>'+scene);
+}
 await mkdir('assets', {recursive:true});
-await writeFile('assets/hero.svg', enhance(render(false), false));
-await writeFile('assets/hero-mobile.svg', enhance(render(true), true));
+await writeFile('assets/hero.svg', cosmic(enhance(render(false), false), false));
+await writeFile('assets/hero-mobile.svg', cosmic(enhance(render(true), true), true));
 await writeFile('assets/portrait-source.json', JSON.stringify({source:portraitUrl,format:mime,note:'Public GitHub avatar; original pixels preserved. Refresh only when the source avatar changes.'},null,2)+'\n');
 console.log('Generated portrait headers from the actual public GitHub avatar ('+bytes.length+' bytes).');

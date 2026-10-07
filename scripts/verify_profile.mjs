@@ -10,6 +10,7 @@ const headings = [
   'Engineering Profile',
   'Flagship Systems',
   'Reliability-first AI Engineering',
+  'Engineering Toolkit',
   'Supporting Systems',
   'Engineering Telemetry',
   'More Work',
@@ -182,12 +183,13 @@ try {
       }
 
       const sections = configuration.isMobile
-        ? [['top', headings[0]], ['engineering', 'Engineering Profile'], ['flagship', 'Flagship Systems'], ['supporting', 'Supporting Systems'], ['telemetry', 'Engineering Telemetry']]
+        ? [['top', headings[0]], ['engineering', 'Engineering Profile'], ['toolkit', 'Engineering Toolkit'], ['flagship', 'Flagship Systems'], ['supporting', 'Supporting Systems'], ['telemetry', 'Engineering Telemetry']]
         : [
           ['top', headings[0]],
           ['engineering', 'Engineering Profile'],
           ['flagship', 'Flagship Systems'],
           ['reliability', 'Reliability-first AI Engineering'],
+          ['toolkit', 'Engineering Toolkit'],
           ['supporting', 'Supporting Systems'],
           ['telemetry', 'Engineering Telemetry'],
         ];

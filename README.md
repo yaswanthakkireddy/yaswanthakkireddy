@@ -19,6 +19,12 @@ LLM Evaluation · AI Reliability · AI Security & Red Teaming
 
 ## Engineering Profile
 
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/about-mobile.svg">
+  <img src="assets/about.svg" alt="About Yaswanth Kumar Akkireddy: Applied AI Engineer at Felix Byte, previously AI Red-Team Engineer at Aram Algorithm. AI systems workbench: retrieve, reason and verify." width="100%">
+</picture>
+
+
 Applied AI Engineer at **Felix Byte Technologies** · Previously AI Red-Team Engineer at **Aram Algorithm**  
 Bengaluru, India · Open to AI Engineering roles across India / Remote
 
@@ -79,6 +85,18 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 - **Evaluate:** define the task, dataset and behavioral contract before interpreting a score.
 - **Constrain:** use deterministic checks and validate model output before accepting it.
 - **Trace:** retain evidence that helps explain failures and reproduce decisions.
+
+## Engineering Toolkit
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/toolkit-mobile.svg">
+  <img src="assets/toolkit.svg" alt="Engineering toolkit: LangGraph, LangChain and RAGAS; Python, FastAPI and Docker; PostgreSQL, PyTorch and sqlglot; SHAP, Fairlearn and ModelWatch." width="100%">
+</picture>
+
+**Agents & retrieval:** LangGraph · LangChain · RAGAS  
+**APIs & delivery:** Python · FastAPI · Docker  
+**Data & learning:** PostgreSQL · PyTorch · sqlglot  
+**Explainability & monitoring:** SHAP · Fairlearn · ModelWatch
 
 ## Supporting Systems
 
