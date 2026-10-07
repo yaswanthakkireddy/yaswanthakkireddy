@@ -1,0 +1,34 @@
+name: Rebuild contribution city
+
+on:
+  schedule:
+    - cron: "23 2 * * *"   # daily, 07:53 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-city
+  cancel-in-progress: true
+
+jobs:
+  city:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Render city from public contributions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python assets/v3/github-profile-v3/scripts/build_city.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets/v3/github-profile-v3/assets/v3/city.svg; then echo "No changes."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/v3/github-profile-v3/assets/v3/city.svg
+          git commit -m "chore: rebuild contribution city"
+          git push

@@ -1,180 +1,55 @@
 <div align="center">
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/neon-banner-mobile.svg?v=blue-mint-20261007">
-  <img src="assets/neon-banner.svg?v=blue-mint-20261007" alt="Yaswanth Akkireddy — animated neon name banner with a blue-and-mint sky, retro grid and orbiting planets." width="100%">
-</picture>
-
 # Yaswanth Kumar Akkireddy
 
-**AI Engineer · Generative AI · Agentic AI · Retrieval-Augmented Generation (RAG)**
+**AI Engineer · Generative AI · Agentic AI · Retrieval-Augmented Generation (RAG) · LLM Evaluation · AI Reliability & Security**
 
-LLM Evaluation · AI Reliability · AI Security & Red Teaming
+<img src="assets/v3/github-profile-v3/assets/v3/hero.svg" alt="Yaswanth Kumar Akkireddy, AI Engineer in Bengaluru: portrait in a camera viewfinder with cycling focus areas — agentic AI systems with LangGraph, RAG pipelines that cite their sources, LLM evaluation and red-team suites, guardrails for agent tool calls." width="100%">
 
-AI engineering portfolio of **Yaswanth Kumar Akkireddy**, based in Bengaluru, India. Building source-grounded RAG, agent workflows and auditable AI systems with Python, LangGraph and FastAPI.
-
-
+Applied AI Engineer at **Felix Byte Technologies** · Previously AI Red-Team Engineer at **Aram Algorithm** · Bengaluru, India  
+I build agentic AI and RAG systems in **Python, LangGraph and FastAPI**, with evaluation, guardrails and audit trails designed in. Open to AI Engineering roles across India and remote.
 
 [LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy) · [GitHub](https://github.com/yaswanthakkireddy) · [Email](mailto:yaswanthkumarakkireddy@gmail.com)
 
-**Explore:** [Agentic RAG → CortexAgent](https://github.com/yaswanthakkireddy/cortexagent) · [Agent execution safety → TOSCO](https://github.com/yaswanthakkireddy/TOSCO) · [SQL migration analysis → MigrationLens](https://github.com/yaswanthakkireddy/MigrationLens)
-
 </div>
 
-## Engineering Profile
-
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/about-portrait-mobile.svg?v=blue-mint-20261007">
-  <img src="assets/about-portrait.svg?v=blue-mint-20261007" alt="About Yaswanth Kumar Akkireddy: actual GitHub portrait, Applied AI Engineer at Felix Byte, previously AI Red-Team Engineer at Aram Algorithm." width="100%">
-</picture>
-
-
-Applied AI Engineer at **Felix Byte Technologies** · Previously AI Red-Team Engineer at **Aram Algorithm**  
-Bengaluru, India · Open to AI Engineering roles across India / Remote
-
-I build **Generative AI and agentic systems** with Python, LangGraph and FastAPI: source-grounded **RAG**, multi-agent orchestration, **LLM evaluation**, deterministic guardrails and auditable tool execution. My AI red-teaming experience informs how I test failures and define safety boundaries.
-
-### Find the relevant project
-
-| Engineering problem | Project | What to inspect |
-| --- | --- | --- |
-| Research grounded in source documents | [CortexAgent](https://github.com/yaswanthakkireddy/cortexagent) | Hybrid retrieval, agent revision and scoped evaluation |
-| Safe execution of agent-proposed actions | [TOSCO](https://github.com/yaswanthakkireddy/TOSCO) | Deterministic gates, proof packets and sandbox boundaries |
-| Database migration risk | [MigrationLens](https://github.com/yaswanthakkireddy/MigrationLens) | SQL analysis, benchmark fixtures and SARIF reports |
-| Explainable machine learning | [NeuroShield](https://github.com/yaswanthakkireddy/NeuroShield) · [FairLend](https://github.com/yaswanthakkireddy/fairlend) | Temporal graph evaluation and scoped fairness benchmarks |
-| Experimentation and model monitoring | [ExperimentOS](https://github.com/yaswanthakkireddy/ExperimentOS) · [ModelWatch](https://github.com/yaswanthakkireddy/modelwatch) | Statistical experiments, drift signals and test evidence |
-
-**Engineering focus:** retrieval quality · agent tool safety · reproducible evaluation · explainability · observability  
-**Core tools:** Python · LangGraph · LangChain · FastAPI · Docker · PostgreSQL · RAGAS · PyTorch
-
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/system-mobile.svg?v=blue-mint-20261007">
-  <img src="assets/system.svg?v=blue-mint-20261007" alt="System map: CortexAgent and TOSCO for orchestration; NeuroShield and FairLend for decision systems; MigrationLens, ExperimentOS and ModelWatch for reliability tooling." width="100%">
-</picture>
-
-## Flagship Systems
-
-<a href="https://github.com/yaswanthakkireddy/TOSCO">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/projects/tosco-mobile.svg?v=blue-mint-20261007">
-  <img src="assets/projects/tosco.svg?v=blue-mint-20261007" alt="TOSCO — clearance for AI financial actions: payment intent, deterministic gates, sealed proof and token-bound mock-bank execution. Hackathon prototype with seeded evidence." width="100%">
-</picture>
-</a>
-
-**[TOSCO](https://github.com/yaswanthakkireddy/TOSCO)** — an agent proposes a payment; typed evidence and deterministic gates decide **ALLOW / BLOCK / FREEZE**. A hash-chained proof packet and HMAC clearance token bind the decision to sandbox execution. **FastAPI · Pydantic · React · Vultr.**
-
-*RAISE Summit hackathon prototype: seeded evidence, simulated enterprise signals and a mock bank.*
-
-<details>
-<summary><b>See TOSCO’s clearance console and technical evidence</b></summary>
-
-<a href="https://github.com/yaswanthakkireddy/TOSCO"><img src="https://raw.githubusercontent.com/yaswanthakkireddy/TOSCO/main/docs/assets/front-view.png" alt="TOSCO sandbox console showing payment intent, clearance gates, proof ledger and mock-bank execution." width="100%"></a>
-
-[Architecture](https://github.com/yaswanthakkireddy/TOSCO/blob/main/docs/ARCHITECTURE.md) · [Security boundaries](https://github.com/yaswanthakkireddy/TOSCO/blob/main/docs/SECURITY_NOTES.md)
-
-</details>
-
-
-### Selected repositories
-
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/selected-repositories-mobile.svg">
-  <img src="assets/selected-repositories.svg" alt="Selected repository gallery: TOSCO, CortexAgent, MigrationLens, NeuroShield, FairLend and ModelWatch. Native repository links and details below." width="100%">
-</picture>
-
-[**TOSCO**](https://github.com/yaswanthakkireddy/TOSCO) · [**CortexAgent**](https://github.com/yaswanthakkireddy/cortexagent) · [**MigrationLens**](https://github.com/yaswanthakkireddy/MigrationLens) · [**NeuroShield**](https://github.com/yaswanthakkireddy/NeuroShield) · [**FairLend**](https://github.com/yaswanthakkireddy/fairlend) · [**ModelWatch**](https://github.com/yaswanthakkireddy/modelwatch)
-
-**[CortexAgent](https://github.com/yaswanthakkireddy/cortexagent)** — SEC 10-K research with LangGraph, hybrid retrieval, reranking, critic-gated revision and RAGAS evaluation.
-
-**[MigrationLens](https://github.com/yaswanthakkireddy/MigrationLens)** — MySQL-to-PostgreSQL migration risk analysis with deterministic rules, sqlglot and SARIF output.
-
-**[NeuroShield](https://github.com/yaswanthakkireddy/NeuroShield)** — transaction-graph learning with PyTorch Geometric, temporal evaluation and explainability.
-
-**[FairLend](https://github.com/yaswanthakkireddy/fairlend)** — credit-risk modelling with LightGBM, SHAP explanations and Fairlearn mitigation. Research benchmark results are separate from the synthetic demo.
-
-## Reliability-first AI Engineering
-
-Capability is only half the system.
-
-I care about what happens when retrieval is weak, a model hallucinates, or an agent attempts an unsafe tool action. My work combines AI engineering with structured evaluation, guardrails, auditability and adversarial testing, informed by my experience red teaming LLMs.
-
-<img src="assets/loop.svg?v=blue-mint-20261007" alt="Reliability-first design loop: query, retrieve, reason, verify and act, with revision and an audit trace." width="100%">
-
-- **Evaluate:** define the task, dataset and behavioral contract before interpreting a score.
-- **Constrain:** use deterministic checks and validate model output before accepting it.
-- **Trace:** retain evidence that helps explain failures and reproduce decisions.
-
-## Engineering Toolkit
-
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/toolkit-mobile.svg?v=blue-mint-20261007">
-  <img src="assets/toolkit.svg?v=blue-mint-20261007" alt="Engineering toolkit: LangGraph, LangChain and RAGAS; Python, FastAPI and Docker; PostgreSQL, PyTorch and sqlglot; SHAP, Fairlearn and ModelWatch." width="100%">
-</picture>
-
-**Agents & retrieval:** LangGraph · LangChain · RAGAS  
-**APIs & delivery:** Python · FastAPI · Docker  
-**Data & learning:** PostgreSQL · PyTorch · sqlglot  
-**Explainability & monitoring:** SHAP · Fairlearn · ModelWatch
-
-## Supporting Systems
-
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/projects/supporting-mobile.svg?v=blue-mint-20261007">
-  <img src="assets/projects/supporting-desktop.svg?v=blue-mint-20261007" alt="Supporting systems: ExperimentOS for experiments and ModelWatch for drift and model monitoring." width="100%">
-</picture>
-
-**[ExperimentOS](https://github.com/yaswanthakkireddy/ExperimentOS)** — Bayesian A/B testing with CUPED variance reduction, funnel and retention analysis.
-
-**[ModelWatch](https://github.com/yaswanthakkireddy/modelwatch)** — drift and model-decay monitoring with PSI/KS, SHAP drift and a champion–challenger loop.
-
-## Contribution Signal
-
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/contribution-signal-mobile.svg?v=blue-mint-spacing">
-  <img src="assets/contribution-signal.svg" alt="Contribution Signal: real public GitHub calendar intensity for 2026 and active contribution days per month, styled in blue and mint." width="100%">
-</picture>
-
-[View the source calendar](https://github.com/yaswanthakkireddy?tab=overview&from=2026-01-01&to=2026-12-31) · [Snapshot data](assets/contribution-source.json)  
-Daily refresh; unchanged activity creates no commit. Bars count active days, not commits. Public activity can include automation.
-
-## Engineering Telemetry
-
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg?v=blue-mint-20261007">
-  <img src="assets/activity.svg?v=blue-mint-20261007" alt="Engineering Telemetry: seven selected systems, scoped evaluation evidence, absolute main-commit dates in UTC and CI status checked against each main-branch commit." width="100%">
-</picture>
-
-Scheduled daily from GitHub; the snapshot changes only when its underlying evidence, activity or CI state changes. Repository activity is not a productivity score, and CI success does not establish model safety.
-
-<details>
-<summary><b>Evidence, datasets and methodology behind the numbers</b></summary>
-
-### Evidence behind the numbers
-
-| System | Evidence and scope |
-| :--- | :--- |
-| TOSCO | [Typed evidence and deterministic gates](https://github.com/yaswanthakkireddy/TOSCO/blob/main/docs/ARCHITECTURE.md), SHA256 proof chaining and HMAC clearance tokens. [Sandbox scope](https://github.com/yaswanthakkireddy/TOSCO/blob/main/docs/SECURITY_NOTES.md): seeded evidence and mock-bank execution. |
-| CortexAgent | **20/20 prompts** in the [single-model behavioral-contract baseline](https://github.com/yaswanthakkireddy/cortexagent/blob/main/evaluation/red_team_raw_baseline.json). [Methodology](https://github.com/yaswanthakkireddy/cortexagent/blob/main/docs/06_safety.md) distinguishes this from the full orchestrator. |
-| MigrationLens | **37/37 expected findings** on the [Sakila benchmark fixture](https://github.com/yaswanthakkireddy/MigrationLens/blob/main/reports/benchmark_latest.md); **138 passed, 3 skipped** in the [documented release audit](https://github.com/yaswanthakkireddy/MigrationLens/blob/main/reports/final_release_audit.md). |
-| NeuroShield | **PR-AUC 0.5177**, GraphSAGE on the [Elliptic temporal holdout](https://github.com/yaswanthakkireddy/NeuroShield/blob/main/docs/model_comparison_report.html): timesteps 40–49, 11,184 labelled nodes. |
-| FairLend | Mitigated-model **DPR 0.9025 / AUC 0.7111** on the [500K-row HMDA research benchmark](https://github.com/yaswanthakkireddy/fairlend/blob/main/docs/results.md). [Recorded CI run](https://github.com/yaswanthakkireddy/fairlend/actions/runs/37529471136/job/112494840271): **15 passed, 19 skipped**. |
-| ExperimentOS | **30 passed** in the [recorded CI run](https://github.com/yaswanthakkireddy/ExperimentOS/actions/runs/37529534021/job/112495056131). |
-| ModelWatch | **43 automated checks** in the [test suite](https://github.com/yaswanthakkireddy/modelwatch/tree/main/tests); artifact-dependent skips mean this is not a claim of 43 passing tests. |
-
-Results belong to the linked datasets, fixtures or runs. They are not production guarantees, test-coverage percentages or legal certifications.
-
-</details>
-
-## More Work
-
-[**CarbonLedgerX**](https://github.com/yaswanthakkireddy/carbonledgerx) — climate commitment risk intelligence using EPA eGRID, DEFRA and SBTi data.
-
-<br>
-
-<img src="assets/footer.svg?v=blue-mint-20261007" alt="Connect with Yaswanth Kumar Akkireddy. Open to AI Engineering opportunities across India and remote." width="100%">
+## What I build
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/yaswanthakkireddy"><b>LinkedIn</b></a> ·
-  <a href="https://github.com/yaswanthakkireddy"><b>GitHub</b></a> ·
-  <a href="mailto:yaswanthkumarakkireddy@gmail.com"><b>Email</b></a>
+  <img src="assets/v3/github-profile-v3/assets/v3/build.svg" alt="What I build: agentic AI with LangGraph and critic loops; RAG that cites its sources; LLM evaluation with RAGAS, LLM-as-judge and red-team suites; reliable ML with explainability, drift monitoring and fairness audits." width="49%">
+  <img src="assets/v3/github-profile-v3/assets/v3/carousel.svg" alt="Beyond the day job: shipping open-source projects in public, exploring how LLMs are built from scratch to Indic continued pretraining, gym sessions with AI podcasts, and a nine-phase AI engineering roadmap." width="49%">
 </p>
+
+## Tech orbit
+
+<img src="assets/v3/github-profile-v3/assets/v3/orbit.svg" alt="Tech orbit and toolkit — agents: LangGraph, LangChain, MCP; retrieval: BM25 + dense hybrid search, cross-encoder reranking, ChromaDB; evaluation: RAGAS, LLM-as-judge, red teaming, pytest; serving: Python, FastAPI, Docker, PostgreSQL; ML: PyTorch, PyTorch Geometric, LightGBM, SHAP." width="100%">
+
+## ID badge & dashboard
+
+<img src="assets/v3/github-profile-v3/assets/v3/badge.svg" alt="ID badge for Yaswanth Kumar Akkireddy, AI Engineer, beside a dashboard: 7 flagship repositories, 20/20 adversarial probes passed in the CortexAgent benchmark, 37/37 MigrationLens benchmark findings, 380+ test functions across repositories." width="100%">
+
+## Projects
+
+| Project | What it does | Verified result | Stack |
+| --- | --- | --- | --- |
+| [**CortexAgent**](https://github.com/yaswanthakkireddy/cortexagent) | Multi-agent RAG for SEC 10-K research with hybrid retrieval and critic-gated revision | 20/20 adversarial probes across 7 attack categories (project benchmark) | LangGraph · ChromaDB · RAGAS · FastAPI · MCP |
+| [**MigrationLens**](https://github.com/yaswanthakkireddy/MigrationLens) | Deterministic-first MySQL-to-PostgreSQL migration risk analysis | 37/37 expected findings on the Sakila fixture · 55 rules | Python · sqlglot · PostgreSQL · SARIF |
+| [**NeuroShield**](https://github.com/yaswanthakkireddy/NeuroShield) | Graph neural networks for anti-money-laundering with explanations and federated learning | GraphSAGE test PR-AUC 0.518 (temporal split) | PyTorch Geometric · FastAPI · Redis |
+| [**FairLend**](https://github.com/yaswanthakkireddy/fairlend) | Explainable, fairness-audited credit scoring on HMDA 2024 data | Demographic parity ratio 0.903 (LightGBM + Fairlearn) | LightGBM · SHAP · Fairlearn |
+| [**ModelWatch**](https://github.com/yaswanthakkireddy/modelwatch) | Data-drift and model-decay monitoring with a champion–challenger loop | 43 tests in CI | LightGBM · TensorFlow · Evidently AI |
+| [**ExperimentOS**](https://github.com/yaswanthakkireddy/ExperimentOS) | Bayesian A/B testing with CUPED and versioned metric definitions | 30 tests in CI | PyMC · Streamlit · GitHub Actions |
+| [**CarbonLedgerX**](https://github.com/yaswanthakkireddy/carbonledgerx) | Climate commitment risk intelligence: emissions forecasts and reconciled risk scores | Built on 3 public datasets (EPA eGRID, DEFRA, SBTi) | Python · FastAPI · Streamlit |
+
+<img src="assets/v3/github-profile-v3/assets/v3/city.svg" alt="3D contribution city: an isometric night skyline where every tower is a day with public GitHub contributions, rebuilt daily." width="100%">
+
+## Connect
+
+<img src="assets/v3/github-profile-v3/assets/v3/footer.svg" alt="Yaswanth Kumar Akkireddy pointing to LinkedIn, GitHub and email: let's build AI that holds up in production." width="100%">
+
+<div align="center">
+
+**[LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy)** · **[GitHub](https://github.com/yaswanthakkireddy)** · **[Email](mailto:yaswanthkumarakkireddy@gmail.com)**
+
+<sub>All visuals are self-hosted SVGs; the contribution city refreshes daily through GitHub Actions.</sub>
+
+</div>
