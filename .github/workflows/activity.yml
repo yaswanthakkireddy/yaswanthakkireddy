@@ -1,0 +1,64 @@
+name: Engineering Telemetry
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_activity.py"
+      - "tests/test_build_activity.py"
+      - ".github/workflows/activity.yml"
+  pull_request:
+    paths:
+      - "scripts/build_activity.py"
+      - "tests/test_build_activity.py"
+      - ".github/workflows/activity.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telemetry-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - name: Check deterministic rendering and CI semantics
+        run: python -m unittest discover -s tests -v
+
+  refresh:
+    needs: test
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - name: Read public project evidence and current main CI states
+        run: python scripts/build_activity.py
+      - name: Commit only a meaningful panel change
+        run: |
+          git add -- assets/activity.svg assets/activity-mobile.svg
+          if git diff --cached --quiet; then
+            echo "Engineering Telemetry is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh engineering telemetry"
+          git push origin HEAD:main
