@@ -150,6 +150,18 @@ try {
           await writeFile(outputDirectory + '/' + configuration.name + '-motion-' + label + '.png', buffer);
         }
       }
+      result.sectionMotion = [];
+      for (const prefix of ['About Yaswanth', 'Engineering toolkit:', 'CortexAgent, MigrationLens', 'Engineering Telemetry:']) {
+        const target = readme.locator('img[alt^="' + prefix + '"]');
+        if (!await target.count()) { result.failures.push('Missing animated section: ' + prefix); continue; }
+        await target.scrollIntoViewIfNeeded();
+        const first = await target.screenshot({ type: 'png', animations: 'allow' });
+        await delay(1200);
+        const second = await target.screenshot({ type: 'png', animations: 'allow' });
+        const changed = !first.equals(second);
+        result.sectionMotion.push({ section: prefix, changed });
+        if (!changed) result.failures.push('No visible motion in section: ' + prefix);
+      }
       const visibleText = await readme.innerText();
       result.searchableIdentity = ['Yaswanth Kumar Akkireddy', 'Generative AI', 'Agentic AI', 'Retrieval-Augmented Generation', 'LLM evaluation', 'FastAPI'].every(term => visibleText.includes(term));
       if (!result.searchableIdentity) result.failures.push('Core identity or engineering terms are missing from native README text.');

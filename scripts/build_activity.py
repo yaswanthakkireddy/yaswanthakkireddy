@@ -204,7 +204,13 @@ def render(rows: list[dict]) -> str:
         _text(48, height - 46, "Daily snapshot · CI runs matched to main commits · sources linked below.", size=16),
         '</svg>\n',
     ))
-    return "".join(parts)
+    svg = "".join(parts)
+    width = 600 if 'width="600"' in svg[:180] else 1200
+    y = 134 if width == 600 else 138
+    motion = (f'<g aria-hidden="true"><rect x="32" y="{y}" width="60" height="2" '
+              f'fill="#00c8ff"><animate attributeName="x" values="32;{width - 92};32" '
+              'dur="10s" repeatCount="indefinite"/></rect></g>')
+    return svg.replace("</svg>", motion + "</svg>")
 
 
 def render_mobile(rows: list[dict]) -> str:

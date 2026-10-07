@@ -65,8 +65,27 @@ for(const fraction of [.04,.12,.27,.48,.75,1]){const y=top+(bottom-top)*fraction
 scene+='</g></g>';
 return svg.replace('fill="url(#grid)"/>','fill="url(#grid)"/>'+scene);
 }
+function addmotion(svg,path) {
+const mobile=path.includes("mobile"),w=mobile?600:1200;
+let extra='<g aria-hidden="true">';
+if(path.includes("toolkit")){
+for(let i=0;i<4;i++){const x=mobile?30:30+(i%2)*585,y=mobile?120+i*200:120+Math.floor(i/2)*200,cw=mobile?540:555,c=["#00c8ff","#ff4b2e","#a3ff39","#ffd537"][i];
+extra+=`<rect x="${x+12}" y="${y+176}" width="50" height="2" rx="1" fill="${c}"><animate attributeName="x" values="${x+12};${x+cw-62};${x+12}" dur="${6+i}s" repeatCount="indefinite"/></rect>`;
+for(let j=0;j<3;j++){const tx=x+60+j*168;extra+=`<rect x="${tx}" y="${y+54}" width="60" height="57" rx="12" fill="none" stroke="${c}" stroke-width="2"><animate attributeName="stroke-opacity" values=".12;.75;.12" dur="5s" begin="${j+i}s" repeatCount="indefinite"/></rect>`;}
+}
+}else if(path.includes("about")){
+const ox=mobile?30:675,oy=mobile?390:72;for(let i=0;i<3;i++)extra+=`<circle cx="${ox+34+i*(mobile?170:155)}" cy="${oy+83}" r="3" fill="${["#00c8ff","#ff4b2e","#a3ff39"][i]}"><animate attributeName="opacity" values=".2;1;.2" dur="4s" begin="${i}s" repeatCount="indefinite"/></circle>`;
+}else if(path.includes("core-")){
+const ch=mobile?493:485;for(let i=0;i<4;i++){const x=mobile?0:i%2*610,y=mobile?i*(ch+18):Math.floor(i/2)*(ch+20),cw=mobile?600:590;extra+=`<rect x="${x+15}" y="${y+8}" width="72" height="2" fill="${["#00c8ff","#ff4b2e","#a3ff39","#ffd537"][i]}"><animate attributeName="x" values="${x+15};${x+cw-87};${x+15}" dur="${7+i}s" repeatCount="indefinite"/></rect>`;}
+}else if(path.includes("hero")){
+if(!mobile){extra+=`<g transform="translate(676 115)"><ellipse rx="44" ry="14" fill="none" stroke="#00c8ff" stroke-opacity=".55" transform="rotate(-25)"/><circle r="24" fill="#121627" stroke="#ff4b2e" stroke-opacity=".6"/><ellipse rx="44" ry="14" fill="none" stroke="#ffd537" stroke-opacity=".5" transform="rotate(-25)"/><circle cx="44" r="3" fill="#00c8ff"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/></circle></g>`;}
+}else if(path.includes("activity")){
+extra+=`<rect x="32" y="${mobile?134:138}" width="60" height="2" fill="#00c8ff"><animate attributeName="x" values="32;${w-92};32" dur="10s" repeatCount="indefinite"/></rect>`;
+}
+return svg.replace("</svg>",extra+"</g></svg>");
+}
 await mkdir('assets', {recursive:true});
-await writeFile('assets/hero.svg', cosmic(enhance(render(false), false), false));
-await writeFile('assets/hero-mobile.svg', cosmic(enhance(render(true), true), true));
+await writeFile('assets/hero.svg', addmotion(cosmic(enhance(render(false), false), false), 'assets/hero.svg'));
+await writeFile('assets/hero-mobile.svg', addmotion(cosmic(enhance(render(true), true), true), 'assets/hero-mobile.svg'));
 await writeFile('assets/portrait-source.json', JSON.stringify({source:portraitUrl,format:mime,note:'Public GitHub avatar; original pixels preserved. Refresh only when the source avatar changes.'},null,2)+'\n');
 console.log('Generated portrait headers from the actual public GitHub avatar ('+bytes.length+' bytes).');
