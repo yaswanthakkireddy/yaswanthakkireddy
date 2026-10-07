@@ -34,7 +34,6 @@ The latest audit found empty topics on all nine portfolio/profile repositories. 
 | [fairlend](https://github.com/yaswanthakkireddy/fairlend) | Explainable credit-risk modelling with SHAP explanations, Fairlearn mitigation and scoped HMDA research benchmarks. | responsible-ai, explainable-ai, fairlearn, shap, lightgbm, credit-risk |
 | [ExperimentOS](https://github.com/yaswanthakkireddy/ExperimentOS) | Bayesian A/B testing with CUPED variance reduction, funnel and retention analysis, and versioned metric definitions. | ab-testing, bayesian-statistics, experimentation, pymc, streamlit |
 | [modelwatch](https://github.com/yaswanthakkireddy/modelwatch) | Credit-risk model monitoring with data drift detection, SHAP drift and a champion-challenger loop. | ml-monitoring, data-drift, model-monitoring, explainable-ai, lightgbm |
-
 | [carbonledgerx](https://github.com/yaswanthakkireddy/carbonledgerx) | Climate commitment risk intelligence using EPA eGRID, DEFRA and SBTi data. | climate-data, carbon-accounting, risk-analysis |
 
 These suggestions describe documented project features. Add a deployment URL only after confirming it works and represents the current project.
