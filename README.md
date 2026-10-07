@@ -6,7 +6,10 @@
 
 Generative AI · Agentic AI · RAG · LLM Evaluation · Reliability · Security
 
-<img src="assets/hero.svg" alt="Yaswanth Kumar Akkireddy — AI Engineer building reliable Generative and Agentic AI systems. Four flagship systems." width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg">
+  <img src="assets/hero.svg" alt="Yaswanth Kumar Akkireddy — AI systems. Clear boundaries. Generative and Agentic AI with evaluation, guardrails and auditable execution." width="100%">
+</picture>
 
 [LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy) · [GitHub](https://github.com/yaswanthakkireddy) · [Email](mailto:yaswanthkumarakkireddy@gmail.com)
 
@@ -21,9 +24,30 @@ My work spans **Retrieval-Augmented Generation (RAG), multi-agent systems, LLM e
 
 **Core tools:** Python · LangGraph · LangChain · FastAPI · Docker · PostgreSQL · RAGAS · PyTorch
 
-<img src="assets/system.svg" alt="Engineering profile: agent orchestration, hybrid retrieval, evaluation and serving. Four flagship systems and two supporting projects, with project-scoped evaluation evidence." width="100%">
+<img src="assets/system.svg" alt="Engineering profile: agent orchestration, hybrid retrieval, evaluation and serving. Five flagship systems and two supporting projects, with project-scoped evaluation evidence." width="100%">
 
 ## Flagship Systems
+
+<a href="https://github.com/yaswanthakkireddy/TOSCO">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/projects/tosco-mobile.svg">
+  <img src="assets/projects/tosco.svg" alt="TOSCO — clearance for AI financial actions: payment intent, deterministic gates, sealed proof and token-bound mock-bank execution. Hackathon prototype with seeded evidence." width="100%">
+</picture>
+</a>
+
+**[TOSCO](https://github.com/yaswanthakkireddy/TOSCO)** — an agent proposes a payment; typed evidence and deterministic gates decide **ALLOW / BLOCK / FREEZE**. A hash-chained proof packet and HMAC clearance token bind the decision to sandbox execution. **FastAPI · Pydantic · React · Vultr.**
+
+*RAISE Summit hackathon prototype: seeded evidence, simulated enterprise signals and a mock bank.*
+
+<details>
+<summary><b>See TOSCO’s clearance console and technical evidence</b></summary>
+
+<a href="https://github.com/yaswanthakkireddy/TOSCO"><img src="https://raw.githubusercontent.com/yaswanthakkireddy/TOSCO/main/docs/assets/front-view.png" alt="TOSCO sandbox console showing payment intent, clearance gates, proof ledger and mock-bank execution." width="100%"></a>
+
+[Architecture](https://github.com/yaswanthakkireddy/TOSCO/blob/main/docs/ARCHITECTURE.md) · [Security boundaries](https://github.com/yaswanthakkireddy/TOSCO/blob/main/docs/SECURITY_NOTES.md)
+
+</details>
+
 
 <p align="center">
   <a href="https://github.com/yaswanthakkireddy/cortexagent"><img src="assets/projects/cortexagent.svg" alt="CortexAgent — multi-agent RAG for SEC 10-K research. 20 of 20 prompts passed in a single-model behavioral-contract baseline, not an end-to-end safety guarantee." width="49%"></a>
@@ -70,7 +94,7 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg">
-  <img src="assets/activity.svg" alt="Engineering Telemetry: six selected systems, scoped evaluation evidence, absolute main-commit dates in UTC and CI status checked against each main-branch commit." width="100%">
+  <img src="assets/activity.svg" alt="Engineering Telemetry: seven selected systems, scoped evaluation evidence, absolute main-commit dates in UTC and CI status checked against each main-branch commit." width="100%">
 </picture>
 
 Scheduled daily from GitHub; the snapshot changes only when its underlying evidence, activity or CI state changes. Repository activity is not a productivity score, and CI success does not establish model safety.
@@ -79,6 +103,7 @@ Scheduled daily from GitHub; the snapshot changes only when its underlying evide
 
 | System | Evidence and scope |
 | :--- | :--- |
+| TOSCO | [Typed evidence and deterministic gates](https://github.com/yaswanthakkireddy/TOSCO/blob/main/docs/ARCHITECTURE.md), SHA256 proof chaining and HMAC clearance tokens. [Sandbox scope](https://github.com/yaswanthakkireddy/TOSCO/blob/main/docs/SECURITY_NOTES.md): seeded evidence and mock-bank execution. |
 | CortexAgent | **20/20 prompts** in the [single-model behavioral-contract baseline](https://github.com/yaswanthakkireddy/cortexagent/blob/main/evaluation/red_team_raw_baseline.json). [Methodology](https://github.com/yaswanthakkireddy/cortexagent/blob/main/docs/06_safety.md) distinguishes this from the full orchestrator. |
 | MigrationLens | **37/37 expected findings** on the [Sakila benchmark fixture](https://github.com/yaswanthakkireddy/MigrationLens/blob/main/reports/benchmark_latest.md); **138 passed, 3 skipped** in the [documented release audit](https://github.com/yaswanthakkireddy/MigrationLens/blob/main/reports/final_release_audit.md). |
 | NeuroShield | **PR-AUC 0.5177**, GraphSAGE on the [Elliptic temporal holdout](https://github.com/yaswanthakkireddy/NeuroShield/blob/main/docs/model_comparison_report.html): timesteps 40–49, 11,184 labelled nodes. |

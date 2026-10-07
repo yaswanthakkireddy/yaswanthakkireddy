@@ -13,7 +13,7 @@ def snapshot():
     result = []
     for index, (repo, *_rest) in enumerate(activity.PROJECTS):
         head = f"{index + 1:040x}"
-        configured = repo != "NeuroShield"
+        configured = repo not in {"NeuroShield", "TOSCO"}
         result.append({
             "repo": repo,
             "head": head,
@@ -102,6 +102,16 @@ class TelemetryTests(unittest.TestCase):
         self.assertIn("No run for this HEAD", activity.render_mobile(rows))
         self.assertNotEqual(svg, activity.render_mobile(rows))
 
+    def test_all_project_rows_fit_inside_both_svg_canvases(self):
+        rows = snapshot()
+        for renderer in (activity.render, activity.render_mobile):
+            root = ElementTree.fromstring(renderer(rows))
+            height = float(root.attrib["height"])
+            for text in root.iter("{http://www.w3.org/2000/svg}text"):
+                self.assertLess(float(text.attrib["y"]), height)
+            self.assertIn("TOSCO", renderer(rows))
+        self.assertIn("mock-bank prototype", activity.render(rows))
+
     def test_api_failure_preserves_last_good_asset(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "activity.svg"
@@ -147,7 +157,7 @@ class TelemetryTests(unittest.TestCase):
             self.fail("Unexpected API request: " + url)
         with patch.object(activity, "_get", side_effect=fake_get):
             rows = activity.fetch()
-        self.assertEqual(len(rows), 6)
+        self.assertEqual(len(rows), 7)
         self.assertTrue(all("yaswanthakkireddy/yaswanthakkireddy/" not in u for u in requested))
         run_urls = [u for u in requested if "/runs?" in u]
         self.assertTrue(all("branch=main" in u and "per_page=1" in u for u in run_urls))

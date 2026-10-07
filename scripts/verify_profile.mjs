@@ -95,6 +95,7 @@ try {
         if (!await headingLocator(readme, name).count()) result.failures.push('Missing heading: ' + name);
       }
 
+      await readme.locator('details').evaluateAll(elements => elements.forEach(element => { element.open = true; }));
       // Scroll every README image into view so lazy images are genuinely loaded.
       const images = readme.locator('img');
       for (let imageIndex = 0; imageIndex < await images.count(); imageIndex++) {
@@ -120,6 +121,14 @@ try {
         if (!image.complete || image.naturalWidth <= 0) result.failures.push('Unloaded image: ' + image.alt);
       }
 
+      const toscoLink = readme.locator('a[href="https://github.com/yaswanthakkireddy/TOSCO"]').first();
+      if (!await toscoLink.count()) result.failures.push('Missing featured TOSCO project.');
+      if (configuration.isMobile && !result.images.some(image => image.source.includes('hero-mobile.svg'))) {
+        result.failures.push('Mobile hero asset was not selected.');
+      }
+      if (configuration.isMobile && !result.images.some(image => image.source.includes('tosco-mobile.svg'))) {
+        result.failures.push('Mobile TOSCO asset was not selected.');
+      }
       result.layout = await readme.evaluate(element => {
         const rect = element.getBoundingClientRect();
         return {
@@ -150,7 +159,7 @@ try {
       }
 
       const sections = configuration.isMobile
-        ? [['top', headings[0]], ['telemetry', 'Engineering Telemetry']]
+        ? [['top', headings[0]], ['flagship', 'Flagship Systems'], ['supporting', 'Supporting Systems'], ['telemetry', 'Engineering Telemetry']]
         : [
           ['top', headings[0]],
           ['flagship', 'Flagship Systems'],

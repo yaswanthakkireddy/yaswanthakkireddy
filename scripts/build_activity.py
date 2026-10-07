@@ -1,6 +1,6 @@
 """Build the profile's Engineering Telemetry panel using only the standard library.
 
-The six selected public projects are the entire scope. The profile repository is
+The seven selected public projects are the entire scope. The profile repository is
 excluded so its own refresh commits cannot create an activity feedback loop.
 Recorded evidence is deliberately separate from the current main-branch CI
 snapshot. A successful workflow is not a claim that every collected test passed.
@@ -51,6 +51,8 @@ PROJECTS = (
      ("30 passed", "Recorded CI result: 2026-10-06")),
     ("modelwatch", "ModelWatch", "Supporting",
      ("43 checks (documented)", "Artifact-dependent skips")),
+    ("TOSCO", "TOSCO", "Flagship",
+     ("SHA256 proof chain + HMAC token", "Seeded evidence / mock-bank prototype")),
 )
 SANS = "Inter, 'Segoe UI', Arial, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
@@ -160,12 +162,12 @@ def _text(x: int, y: int, value: str, *, size: int = 18,
 
 def render(rows: list[dict]) -> str:
     mapped = validate(rows)
-    width, height = 1200, 696
+    width, height = 1200, 264 + len(PROJECTS) * 72
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">Engineering Telemetry</title>',
-        '<desc id="desc">Scoped evidence for four flagship and two supporting '
+        '<desc id="desc">Scoped evidence for five flagship and two supporting '
         'projects, with CI status checked against each main branch HEAD and '
         'absolute last-main-commit dates in UTC. '
         'Recorded test counts are not live test results.</desc>',
@@ -173,9 +175,9 @@ def render(rows: list[dict]) -> str:
         '<stop stop-color="#22D3EE" stop-opacity=".65"/>'
         '<stop offset="1" stop-color="#3B82F6" stop-opacity=".22"/>'
         '</linearGradient></defs>',
-        '<rect x="1" y="1" width="1198" height="694" rx="24" '
+        f'<rect x="1" y="1" width="1198" height="{height - 2}" rx="24" '
         'fill="#060A14" stroke="url(#edge)"/>',
-        '<rect x="18" y="18" width="1164" height="660" rx="16" fill="#0A1120"/>',
+        f'<rect x="18" y="18" width="1164" height="{height - 36}" rx="16" fill="#0A1120"/>',
         _text(48, 62, "ENGINEERING TELEMETRY", size=16, color="cyan", weight=600, mono=True),
         _text(48, 97, "Evidence and recent engineering", size=27, color="ink", weight=700),
         _text(48, 126, "Scoped results, main-branch CI, and last main commit dates (UTC).", size=17),
@@ -198,8 +200,8 @@ def render(rows: list[dict]) -> str:
             _text(884, top + 53, "main @ " + row["head"][:7], size=14, color="muted", mono=True),
         ))
     parts.extend((
-        '<line x1="48" y1="622" x2="1152" y2="622" stroke="#FFFFFF" stroke-opacity=".07"/>',
-        _text(48, 650, "Daily snapshot · CI runs matched to main commits · sources linked below.", size=16),
+        f'<line x1="48" y1="{height - 74}" x2="1152" y2="{height - 74}" stroke="#FFFFFF" stroke-opacity=".07"/>',
+        _text(48, height - 46, "Daily snapshot · CI runs matched to main commits · sources linked below.", size=16),
         '</svg>\n',
     ))
     return "".join(parts)
@@ -208,13 +210,14 @@ def render(rows: list[dict]) -> str:
 def render_mobile(rows: list[dict]) -> str:
     """A stacked companion preserves readable type on narrow profile screens."""
     mapped = validate(rows)
+    height = 204 + len(PROJECTS) * 196
     parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1380" '
-        'viewBox="0 0 600 1380" role="img" aria-labelledby="title desc">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="600" height="{height}" '
+        f'viewBox="0 0 600 {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">Engineering Telemetry</title>',
         '<desc id="desc">Mobile layout of the same scoped project evidence, '
         'main-commit dates in UTC, and main-HEAD CI snapshot.</desc>',
-        '<rect x="1" y="1" width="598" height="1378" rx="24" fill="#060A14" '
+        f'<rect x="1" y="1" width="598" height="{height - 2}" rx="24" fill="#060A14" '
         'stroke="#22D3EE" stroke-opacity=".4"/>',
         _text(32, 60, "ENGINEERING TELEMETRY", size=24, color="cyan", weight=600),
         _text(32, 98, "Evidence + latest main CI", size=26, color="ink", weight=700),
@@ -235,7 +238,7 @@ def render_mobile(rows: list[dict]) -> str:
                   row["head"][:7], size=19, color="muted"),
         ))
     parts.extend((
-        _text(32, 1350, "UTC dates · linked evidence below", size=20, color="muted"),
+        _text(32, height - 30, "UTC dates · linked evidence below", size=20, color="muted"),
         '</svg>\n',
     ))
     return "".join(parts)

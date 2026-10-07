@@ -35,3 +35,10 @@ The six project repositories returned empty descriptions and topics in the API a
 | [modelwatch](https://github.com/yaswanthakkireddy/modelwatch) | Credit-risk model monitoring with data drift detection, SHAP drift and a champion-challenger loop. | ml-monitoring, data-drift, model-monitoring, explainable-ai, lightgbm |
 
 These suggestions describe documented project features. Add a deployment URL only after confirming it works and represents the current project.
+
+
+## TOSCO profile feature
+
+TOSCO is featured as an agent-action clearance prototype. Its evidence is the typed contract, deterministic gates, SHA256 proof chain and HMAC token flow documented in its repository. Keep seeded-evidence and mock-bank scope visible. Do not present documented test counts as a newly verified run, or the historical Vultr proof as a currently hosted production service.
+
+Suggested six pins: TOSCO, CortexAgent, MigrationLens, NeuroShield, FairLend and ModelWatch. ExperimentOS remains a supporting README card; CarbonLedgerX stays in More Work.

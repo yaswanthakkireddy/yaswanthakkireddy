@@ -48,3 +48,10 @@ Website: https://www.linkedin.com/in/yaswanthakkireddy
 Pinned order: cortexagent, MigrationLens, NeuroShield, fairlend, ExperimentOS, modelwatch.
 
 Repository descriptions and topics are account/repository metadata, not fields in this README. Do not claim those settings were changed unless they were saved through GitHub and verified.
+
+
+## TOSCO profile feature
+
+TOSCO is featured as an agent-action clearance prototype. Its evidence is the typed contract, deterministic gates, SHA256 proof chain and HMAC token flow documented in its repository. Keep seeded-evidence and mock-bank scope visible. Do not present documented test counts as a newly verified run, or the historical Vultr proof as a currently hosted production service.
+
+Suggested six pins: TOSCO, CortexAgent, MigrationLens, NeuroShield, FairLend and ModelWatch. ExperimentOS remains a supporting README card; CarbonLedgerX stays in More Work.
