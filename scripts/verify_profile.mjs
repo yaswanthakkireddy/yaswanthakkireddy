@@ -129,6 +129,14 @@ try {
       if (configuration.isMobile && !result.images.some(image => image.source.includes('tosco-mobile.svg'))) {
         result.failures.push('Mobile TOSCO asset was not selected.');
       }
+      const heroSource = result.images.find(image => image.alt.startsWith('Call me Yaswanth'))?.source;
+      if (!heroSource) result.failures.push('Portrait header was not rendered.');
+      else {
+        const heroResponse = await page.request.get(heroSource);
+        const svg = await heroResponse.text();
+        result.portrait = { embeddedAvatar: /<image[^>]+href="data:image\//.test(svg), motionElements: (svg.match(/<animate(?:Motion|Transform)?\b/g) || []).length };
+        if (!result.portrait.embeddedAvatar || result.portrait.motionElements < 3) result.failures.push('Portrait or self-contained motion is missing.');
+      }
       result.layout = await readme.evaluate(element => {
         const rect = element.getBoundingClientRect();
         return {
@@ -159,9 +167,10 @@ try {
       }
 
       const sections = configuration.isMobile
-        ? [['top', headings[0]], ['flagship', 'Flagship Systems'], ['supporting', 'Supporting Systems'], ['telemetry', 'Engineering Telemetry']]
+        ? [['top', headings[0]], ['engineering', 'Engineering Profile'], ['flagship', 'Flagship Systems'], ['supporting', 'Supporting Systems'], ['telemetry', 'Engineering Telemetry']]
         : [
           ['top', headings[0]],
+          ['engineering', 'Engineering Profile'],
           ['flagship', 'Flagship Systems'],
           ['reliability', 'Reliability-first AI Engineering'],
           ['supporting', 'Supporting Systems'],

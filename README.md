@@ -8,7 +8,7 @@ Generative AI · Agentic AI · RAG · LLM Evaluation · Reliability · Security
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg">
-  <img src="assets/hero.svg" alt="Yaswanth Kumar Akkireddy — AI systems. Clear boundaries. Generative and Agentic AI with evaluation, guardrails and auditable execution." width="100%">
+  <img src="assets/hero.svg" alt="Call me Yaswanth — actual GitHub portrait, Generative and Agentic AI Engineer. RAG, evaluation, reliability and security." width="100%">
 </picture>
 
 [LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy) · [GitHub](https://github.com/yaswanthakkireddy) · [Email](mailto:yaswanthkumarakkireddy@gmail.com)
@@ -52,19 +52,14 @@ My work spans **Retrieval-Augmented Generation (RAG), multi-agent systems, LLM e
 </details>
 
 
-<p align="center">
-  <a href="https://github.com/yaswanthakkireddy/cortexagent"><img src="assets/projects/cortexagent.svg" alt="CortexAgent — multi-agent RAG for SEC 10-K research. 20 of 20 prompts passed in a single-model behavioral-contract baseline, not an end-to-end safety guarantee." width="49%"></a>
-  <a href="https://github.com/yaswanthakkireddy/MigrationLens"><img src="assets/projects/migrationlens.svg" alt="MigrationLens — deterministic-first SQL migration risk analysis. 37 of 37 expected findings on the documented Sakila fixture." width="49%"></a>
-</p>
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/projects/core-mobile.svg">
+  <img src="assets/projects/core-desktop.svg" alt="CortexAgent, MigrationLens, NeuroShield and FairLend — four core systems with project-scoped evidence. Repository links and descriptions below." width="100%">
+</picture>
 
 **[CortexAgent](https://github.com/yaswanthakkireddy/cortexagent)** — SEC 10-K research with LangGraph, hybrid retrieval, reranking, critic-gated revision and RAGAS evaluation.
 
 **[MigrationLens](https://github.com/yaswanthakkireddy/MigrationLens)** — MySQL-to-PostgreSQL migration risk analysis with deterministic rules, sqlglot and SARIF output.
-
-<p align="center">
-  <a href="https://github.com/yaswanthakkireddy/NeuroShield"><img src="assets/projects/neuroshield.svg" alt="NeuroShield — graph intelligence for anti-money-laundering. GraphSAGE PR-AUC 0.5177 on the documented Elliptic temporal holdout." width="49%"></a>
-  <a href="https://github.com/yaswanthakkireddy/fairlend"><img src="assets/projects/fairlend.svg" alt="FairLend — explainable, fairness-audited credit scoring. Mitigated model DPR 0.9025 on the documented HMDA research benchmark, separate from the synthetic demo." width="49%"></a>
-</p>
 
 **[NeuroShield](https://github.com/yaswanthakkireddy/NeuroShield)** — transaction-graph learning with PyTorch Geometric, temporal evaluation and explainability.
 
@@ -84,10 +79,10 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 
 ## Supporting Systems
 
-<p align="center">
-  <a href="https://github.com/yaswanthakkireddy/ExperimentOS"><img src="assets/projects/experimentos.svg" alt="ExperimentOS — Bayesian A/B testing, CUPED and reproducible metric definitions. Supporting engineering project." width="49%"></a>
-  <a href="https://github.com/yaswanthakkireddy/modelwatch"><img src="assets/projects/modelwatch.svg" alt="ModelWatch — data drift, model decay and champion-challenger monitoring. Supporting engineering project." width="49%"></a>
-</p>
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/projects/supporting-mobile.svg">
+  <img src="assets/projects/supporting-desktop.svg" alt="Supporting systems: ExperimentOS for experiments and ModelWatch for drift and model monitoring." width="100%">
+</picture>
 
 **[ExperimentOS](https://github.com/yaswanthakkireddy/ExperimentOS)** — Bayesian A/B testing with CUPED variance reduction, funnel and retention analysis.
 
@@ -102,6 +97,9 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 
 Scheduled daily from GitHub; the snapshot changes only when its underlying evidence, activity or CI state changes. Repository activity is not a productivity score, and CI success does not establish model safety.
 
+<details>
+<summary><b>Evidence, datasets and methodology behind the numbers</b></summary>
+
 ### Evidence behind the numbers
 
 | System | Evidence and scope |
@@ -115,6 +113,8 @@ Scheduled daily from GitHub; the snapshot changes only when its underlying evide
 | ModelWatch | **43 automated checks** in the [test suite](https://github.com/yaswanthakkireddy/modelwatch/tree/main/tests); artifact-dependent skips mean this is not a claim of 43 passing tests. |
 
 Results belong to the linked datasets, fixtures or runs. They are not production guarantees, test-coverage percentages or legal certifications.
+
+</details>
 
 ## More Work
 

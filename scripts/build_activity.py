@@ -57,8 +57,8 @@ PROJECTS = (
 SANS = "Inter, 'Segoe UI', Arial, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 COLORS = {
-    "ink": "#F1F6FF", "soft": "#B6C2D9", "muted": "#8998B3",
-    "cyan": "#22D3EE", "good": "#2DD4BF", "warn": "#FBBF24",
+    "ink": "#F1F6FF", "soft": "#B6C2D9", "muted": "#8995AD",
+    "cyan": "#00C8FF", "good": "#A3FF39", "warn": "#FBBF24",
     "bad": "#FB7185",
 }
 
@@ -172,12 +172,12 @@ def render(rows: list[dict]) -> str:
         'absolute last-main-commit dates in UTC. '
         'Recorded test counts are not live test results.</desc>',
         '<defs><linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">'
-        '<stop stop-color="#22D3EE" stop-opacity=".65"/>'
+        '<stop stop-color="#00C8FF" stop-opacity=".65"/>'
         '<stop offset="1" stop-color="#3B82F6" stop-opacity=".22"/>'
         '</linearGradient></defs>',
         f'<rect x="1" y="1" width="1198" height="{height - 2}" rx="24" '
-        'fill="#060A14" stroke="url(#edge)"/>',
-        f'<rect x="18" y="18" width="1164" height="{height - 36}" rx="16" fill="#0A1120"/>',
+        'fill="#05070E" stroke="url(#edge)"/>',
+        f'<rect x="18" y="18" width="1164" height="{height - 36}" rx="16" fill="#090D16"/>',
         _text(48, 62, "ENGINEERING TELEMETRY", size=16, color="cyan", weight=600, mono=True),
         _text(48, 97, "Evidence and recent engineering", size=27, color="ink", weight=700),
         _text(48, 126, "Scoped results, main-branch CI, and last main commit dates (UTC).", size=17),
@@ -217,8 +217,8 @@ def render_mobile(rows: list[dict]) -> str:
         '<title id="title">Engineering Telemetry</title>',
         '<desc id="desc">Mobile layout of the same scoped project evidence, '
         'main-commit dates in UTC, and main-HEAD CI snapshot.</desc>',
-        f'<rect x="1" y="1" width="598" height="{height - 2}" rx="24" fill="#060A14" '
-        'stroke="#22D3EE" stroke-opacity=".4"/>',
+        f'<rect x="1" y="1" width="598" height="{height - 2}" rx="24" fill="#05070E" '
+        'stroke="#00C8FF" stroke-opacity=".4"/>',
         _text(32, 60, "ENGINEERING TELEMETRY", size=24, color="cyan", weight=600),
         _text(32, 98, "Evidence + latest main CI", size=26, color="ink", weight=700),
         _text(32, 126, "Recorded project scope", size=20, color="muted"),
