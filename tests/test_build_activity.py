@@ -110,6 +110,7 @@ class TelemetryTests(unittest.TestCase):
             for text in root.iter("{http://www.w3.org/2000/svg}text"):
                 self.assertLess(float(text.attrib["y"]), height)
             self.assertIn("TOSCO", renderer(rows))
+            self.assertIn("<animate ", renderer(rows))
         self.assertIn("mock-bank prototype", activity.render(rows))
 
     def test_api_failure_preserves_last_good_asset(self):
