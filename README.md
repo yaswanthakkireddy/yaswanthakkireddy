@@ -7,8 +7,8 @@
 LLM Evaluation · AI Reliability · AI Security & Red Teaming
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg">
-  <img src="assets/hero.svg" alt="Call me Yaswanth — actual GitHub portrait, Generative and Agentic AI Engineer. RAG, evaluation, reliability and security." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg?v=motion-20261007-b">
+  <img src="assets/hero.svg?v=motion-20261007-b" alt="Call me Yaswanth — actual GitHub portrait, Generative and Agentic AI Engineer. RAG, evaluation, reliability and security." width="100%">
 </picture>
 
 [LinkedIn](https://www.linkedin.com/in/yaswanthakkireddy) · [GitHub](https://github.com/yaswanthakkireddy) · [Email](mailto:yaswanthkumarakkireddy@gmail.com)
@@ -20,8 +20,8 @@ LLM Evaluation · AI Reliability · AI Security & Red Teaming
 ## Engineering Profile
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/about-mobile.svg">
-  <img src="assets/about.svg" alt="About Yaswanth Kumar Akkireddy: Applied AI Engineer at Felix Byte, previously AI Red-Team Engineer at Aram Algorithm. AI systems workbench: retrieve, reason and verify." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/about-mobile.svg?v=motion-20261007-b">
+  <img src="assets/about.svg?v=motion-20261007-b" alt="About Yaswanth Kumar Akkireddy: Applied AI Engineer at Felix Byte, previously AI Red-Team Engineer at Aram Algorithm. AI systems workbench: retrieve, reason and verify." width="100%">
 </picture>
 
 
@@ -34,16 +34,16 @@ I build **Generative AI and agentic systems** with Python, LangGraph and FastAPI
 **Core tools:** Python · LangGraph · LangChain · FastAPI · Docker · PostgreSQL · RAGAS · PyTorch
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/system-mobile.svg">
-  <img src="assets/system.svg" alt="System map: CortexAgent and TOSCO for orchestration; NeuroShield and FairLend for decision systems; MigrationLens, ExperimentOS and ModelWatch for reliability tooling." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/system-mobile.svg?v=motion-20261007-b">
+  <img src="assets/system.svg?v=motion-20261007-b" alt="System map: CortexAgent and TOSCO for orchestration; NeuroShield and FairLend for decision systems; MigrationLens, ExperimentOS and ModelWatch for reliability tooling." width="100%">
 </picture>
 
 ## Flagship Systems
 
 <a href="https://github.com/yaswanthakkireddy/TOSCO">
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/projects/tosco-mobile.svg">
-  <img src="assets/projects/tosco.svg" alt="TOSCO — clearance for AI financial actions: payment intent, deterministic gates, sealed proof and token-bound mock-bank execution. Hackathon prototype with seeded evidence." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/projects/tosco-mobile.svg?v=motion-20261007-b">
+  <img src="assets/projects/tosco.svg?v=motion-20261007-b" alt="TOSCO — clearance for AI financial actions: payment intent, deterministic gates, sealed proof and token-bound mock-bank execution. Hackathon prototype with seeded evidence." width="100%">
 </picture>
 </a>
 
@@ -62,8 +62,8 @@ I build **Generative AI and agentic systems** with Python, LangGraph and FastAPI
 
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/projects/core-mobile.svg">
-  <img src="assets/projects/core-desktop.svg" alt="CortexAgent, MigrationLens, NeuroShield and FairLend — four core systems with project-scoped evidence. Repository links and descriptions below." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/projects/core-mobile.svg?v=motion-20261007-b">
+  <img src="assets/projects/core-desktop.svg?v=motion-20261007-b" alt="CortexAgent, MigrationLens, NeuroShield and FairLend — four core systems with project-scoped evidence. Repository links and descriptions below." width="100%">
 </picture>
 
 **[CortexAgent](https://github.com/yaswanthakkireddy/cortexagent)** — SEC 10-K research with LangGraph, hybrid retrieval, reranking, critic-gated revision and RAGAS evaluation.
@@ -80,7 +80,7 @@ Capability is only half the system.
 
 I care about what happens when retrieval is weak, a model hallucinates, or an agent attempts an unsafe tool action. My work combines AI engineering with structured evaluation, guardrails, auditability and adversarial testing, informed by my experience red teaming LLMs.
 
-<img src="assets/loop.svg" alt="Reliability-first design loop: query, retrieve, reason, verify and act, with revision and an audit trace." width="100%">
+<img src="assets/loop.svg?v=motion-20261007-b" alt="Reliability-first design loop: query, retrieve, reason, verify and act, with revision and an audit trace." width="100%">
 
 - **Evaluate:** define the task, dataset and behavioral contract before interpreting a score.
 - **Constrain:** use deterministic checks and validate model output before accepting it.
@@ -89,8 +89,8 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 ## Engineering Toolkit
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/toolkit-mobile.svg">
-  <img src="assets/toolkit.svg" alt="Engineering toolkit: LangGraph, LangChain and RAGAS; Python, FastAPI and Docker; PostgreSQL, PyTorch and sqlglot; SHAP, Fairlearn and ModelWatch." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/toolkit-mobile.svg?v=motion-20261007-b">
+  <img src="assets/toolkit.svg?v=motion-20261007-b" alt="Engineering toolkit: LangGraph, LangChain and RAGAS; Python, FastAPI and Docker; PostgreSQL, PyTorch and sqlglot; SHAP, Fairlearn and ModelWatch." width="100%">
 </picture>
 
 **Agents & retrieval:** LangGraph · LangChain · RAGAS  
@@ -101,8 +101,8 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 ## Supporting Systems
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/projects/supporting-mobile.svg">
-  <img src="assets/projects/supporting-desktop.svg" alt="Supporting systems: ExperimentOS for experiments and ModelWatch for drift and model monitoring." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/projects/supporting-mobile.svg?v=motion-20261007-b">
+  <img src="assets/projects/supporting-desktop.svg?v=motion-20261007-b" alt="Supporting systems: ExperimentOS for experiments and ModelWatch for drift and model monitoring." width="100%">
 </picture>
 
 **[ExperimentOS](https://github.com/yaswanthakkireddy/ExperimentOS)** — Bayesian A/B testing with CUPED variance reduction, funnel and retention analysis.
@@ -112,8 +112,8 @@ I care about what happens when retrieval is weak, a model hallucinates, or an ag
 ## Engineering Telemetry
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg">
-  <img src="assets/activity.svg" alt="Engineering Telemetry: seven selected systems, scoped evaluation evidence, absolute main-commit dates in UTC and CI status checked against each main-branch commit." width="100%">
+  <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg?v=motion-20261007-b">
+  <img src="assets/activity.svg?v=motion-20261007-b" alt="Engineering Telemetry: seven selected systems, scoped evaluation evidence, absolute main-commit dates in UTC and CI status checked against each main-branch commit." width="100%">
 </picture>
 
 Scheduled daily from GitHub; the snapshot changes only when its underlying evidence, activity or CI state changes. Repository activity is not a productivity score, and CI success does not establish model safety.
@@ -143,7 +143,7 @@ Results belong to the linked datasets, fixtures or runs. They are not production
 
 <br>
 
-<img src="assets/footer.svg" alt="Connect with Yaswanth Kumar Akkireddy. Open to AI Engineering opportunities across India and remote." width="100%">
+<img src="assets/footer.svg?v=motion-20261007-b" alt="Connect with Yaswanth Kumar Akkireddy. Open to AI Engineering opportunities across India and remote." width="100%">
 
 <p align="center">
   <a href="https://www.linkedin.com/in/yaswanthakkireddy"><b>LinkedIn</b></a> ·
