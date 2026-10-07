@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/neon-banner-mobile.svg?v=blue-mint-20261007">
-  <img src="assets/neon-banner.svg?v=blue-mint-20261007" alt="Yaswanth Akkireddy — animated neon name banner with a blue-to-pink sky, retro grid and orbiting planets." width="100%">
+  <img src="assets/neon-banner.svg?v=blue-mint-20261007" alt="Yaswanth Akkireddy — animated neon name banner with a blue-and-mint sky, retro grid and orbiting planets." width="100%">
 </picture>
 
 # Yaswanth Kumar Akkireddy
@@ -10,6 +10,8 @@
 **AI Engineer · Generative AI · Agentic AI · Retrieval-Augmented Generation (RAG)**
 
 LLM Evaluation · AI Reliability · AI Security & Red Teaming
+
+AI engineering portfolio of **Yaswanth Kumar Akkireddy**, based in Bengaluru, India. Building source-grounded RAG, agent workflows and auditable AI systems with Python, LangGraph and FastAPI.
 
 
 
@@ -31,6 +33,16 @@ Applied AI Engineer at **Felix Byte Technologies** · Previously AI Red-Team Eng
 Bengaluru, India · Open to AI Engineering roles across India / Remote
 
 I build **Generative AI and agentic systems** with Python, LangGraph and FastAPI: source-grounded **RAG**, multi-agent orchestration, **LLM evaluation**, deterministic guardrails and auditable tool execution. My AI red-teaming experience informs how I test failures and define safety boundaries.
+
+### Find the relevant project
+
+| Engineering problem | Project | What to inspect |
+| --- | --- | --- |
+| Research grounded in source documents | [CortexAgent](https://github.com/yaswanthakkireddy/cortexagent) | Hybrid retrieval, agent revision and scoped evaluation |
+| Safe execution of agent-proposed actions | [TOSCO](https://github.com/yaswanthakkireddy/TOSCO) | Deterministic gates, proof packets and sandbox boundaries |
+| Database migration risk | [MigrationLens](https://github.com/yaswanthakkireddy/MigrationLens) | SQL analysis, benchmark fixtures and SARIF reports |
+| Explainable machine learning | [NeuroShield](https://github.com/yaswanthakkireddy/NeuroShield) · [FairLend](https://github.com/yaswanthakkireddy/fairlend) | Temporal graph evaluation and scoped fairness benchmarks |
+| Experimentation and model monitoring | [ExperimentOS](https://github.com/yaswanthakkireddy/ExperimentOS) · [ModelWatch](https://github.com/yaswanthakkireddy/modelwatch) | Statistical experiments, drift signals and test evidence |
 
 **Engineering focus:** retrieval quality · agent tool safety · reproducible evaluation · explainability · observability  
 **Core tools:** Python · LangGraph · LangChain · FastAPI · Docker · PostgreSQL · RAGAS · PyTorch
